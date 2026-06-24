@@ -222,22 +222,21 @@ def run_agent(agent: Any, user_message: str) -> dict:
 
     for msg in messages:
         # ToolMessage carries results from tool invocations
-        if hasattr(msg, "name") and hasattr(msg, "content"):
+        if isinstance(msg, ToolMessage):
             content = msg.content
             tool_calls.append({
-                "tool": getattr(msg, "name", ""),
+                "tool": msg.name or "",
                 "output": content[:500] + ("…" if len(content) > 500 else ""),
             })
             # Detect Plotly JSON (starts with {"data":)
             if content.strip().startswith('{"data"'):
                 figure_json = content
 
-    # Final answer is the last AIMessage
+    # Final answer is the last AIMessage with text content
     answer = ""
     for msg in reversed(messages):
-        if hasattr(msg, "content") and not hasattr(msg, "name"):
-            if msg.content:
-                answer = msg.content
-                break
+        if isinstance(msg, AIMessage) and msg.content:
+            answer = msg.content
+            break
 
     return {"answer": answer, "tool_calls": tool_calls, "figure_json": figure_json}
