@@ -14,6 +14,8 @@ import pandas as pd
 DB_PATH = Path(__file__).parent / "employees.db"
 CSV_PATH = Path(__file__).parent / "employees.csv"
 
+TENANTS = ("acme", "beta", "gamma")
+
 ALLOWED_COLUMNS = frozenset(
     ["user_id", "tenant_id", "name", "department", "salary",
      "performance_score", "hire_date", "notes"]
@@ -33,12 +35,28 @@ ALLOWED_AGG_FNS: dict[str, str] = {
 NUMERIC_COLUMNS = frozenset(["salary", "performance_score", "user_id"])
 
 
+def tenant_view(tenant_id: str) -> str:
+    """Return the per-tenant view name (tenant_id is allow-listed by callers)."""
+    return f"employees_{tenant_id}"
+
+
 def init_db(csv_path: str | Path = CSV_PATH, db_path: str | Path = DB_PATH) -> None:
-    """Load employees.csv into SQLite and index by tenant_id."""
+    """
+    Load employees.csv into SQLite, index by tenant_id, and create one
+    pre-filtered VIEW per tenant.  SecureDataAccess only ever reads through
+    its tenant's view — see the connection authorizer in SecureDataAccess.
+    """
     df = pd.read_csv(csv_path)
     con = sqlite3.connect(db_path)
     df.to_sql("employees", con, if_exists="replace", index=False)
     con.execute("CREATE INDEX IF NOT EXISTS idx_tenant ON employees(tenant_id)")
+    for tid in TENANTS:
+        view = tenant_view(tid)
+        con.execute(f"DROP VIEW IF EXISTS {view}")
+        # tid is allow-listed (member of TENANTS); safe to embed, but also bound
+        con.execute(
+            f"CREATE VIEW {view} AS SELECT * FROM employees WHERE tenant_id = '{tid}'"
+        )
     con.commit()
     con.close()
 
@@ -51,28 +69,43 @@ class SecureDataAccess:
     """
 
     def __init__(self, tenant_id: str, db_path: str | Path = DB_PATH) -> None:
-        if tenant_id not in ("acme", "beta", "gamma"):
+        if tenant_id not in TENANTS:
             raise ValueError(f"Unknown tenant: {tenant_id!r}")
         self._tenant_id = tenant_id
         self._db_path = str(db_path)
+        self._view = tenant_view(tenant_id)
 
     # ------------------------------------------------------------------
     # Internal helpers
     # ------------------------------------------------------------------
 
+    def _authorizer(self, action, arg1, arg2, db_name, trigger):
+        """
+        Connection-level last line of defense.  Even raw SQL on this connection
+        cannot read the base `employees` table directly or any other tenant's
+        view — reads of the base table are only permitted when expanded through
+        THIS tenant's view (SQLite passes the view name as `trigger`).
+        """
+        if action == sqlite3.SQLITE_READ:
+            table = arg1
+            if table == "employees":
+                # base-table read is only allowed via this tenant's own view
+                return sqlite3.SQLITE_OK if trigger == self._view else sqlite3.SQLITE_DENY
+            if table.startswith("employees_") and table != self._view:
+                # any other tenant's view is off-limits
+                return sqlite3.SQLITE_DENY
+        return sqlite3.SQLITE_OK
+
     def _connect(self) -> sqlite3.Connection:
         con = sqlite3.connect(self._db_path)
         con.row_factory = sqlite3.Row
+        con.set_authorizer(self._authorizer)
         return con
 
     def _base_df(self) -> pd.DataFrame:
-        """Return the full tenant-filtered DataFrame."""
+        """Return the full tenant-filtered DataFrame (via the tenant view)."""
         con = self._connect()
-        df = pd.read_sql_query(
-            "SELECT * FROM employees WHERE tenant_id = ?",
-            con,
-            params=(self._tenant_id,),
-        )
+        df = pd.read_sql_query(f"SELECT * FROM {self._view}", con)
         con.close()
         return df
 
@@ -126,13 +159,13 @@ class SecureDataAccess:
         if department is not None:
             self._validate_department(department)
             sql = (
-                f"SELECT {select} FROM employees "
-                "WHERE tenant_id = ? AND department = ? LIMIT ?"
+                f"SELECT {select} FROM {self._view} "
+                "WHERE department = ? LIMIT ?"
             )
-            params: tuple = (self._tenant_id, department, limit)
+            params: tuple = (department, limit)
         else:
-            sql = f"SELECT {select} FROM employees WHERE tenant_id = ? LIMIT ?"
-            params = (self._tenant_id, limit)
+            sql = f"SELECT {select} FROM {self._view} LIMIT ?"
+            params = (limit,)
 
         con = self._connect()
         df = pd.read_sql_query(sql, con, params=params)
@@ -160,25 +193,22 @@ class SecureDataAccess:
         if sql_agg is None:
             raise ValueError(f"Unsupported aggregation: {agg_fn!r}")
 
-        where_clauses = ["tenant_id = ?"]
-        params_list: list = [self._tenant_id]
-
+        params_list: list = []
+        where = ""
         if department is not None:
             self._validate_department(department)
-            where_clauses.append("department = ?")
+            where = "WHERE department = ?"
             params_list.append(department)
-
-        where = " AND ".join(where_clauses)
 
         if group_by:
             sql = (
                 f"SELECT {group_by}, {sql_agg}({metric}) AS {agg_fn}_{metric} "
-                f"FROM employees WHERE {where} GROUP BY {group_by} ORDER BY {group_by}"
+                f"FROM {self._view} {where} GROUP BY {group_by} ORDER BY {group_by}"
             )
         else:
             sql = (
                 f"SELECT {sql_agg}({metric}) AS {agg_fn}_{metric} "
-                f"FROM employees WHERE {where}"
+                f"FROM {self._view} {where}"
             )
 
         con = self._connect()
