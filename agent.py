@@ -11,14 +11,15 @@ import json
 from typing import Any
 
 import plotly.express as px
-from langchain_core.messages import HumanMessage
+from langchain_core.messages import AIMessage, HumanMessage, ToolMessage
+
 from langchain_core.tools import tool
 from langchain_ollama import ChatOllama
 from langgraph.prebuilt import create_react_agent
 
 from db import SecureDataAccess
 
-OLLAMA_MODEL = "llama3.1"
+OLLAMA_MODEL = "gemma4"
 
 
 # ---------------------------------------------------------------------------

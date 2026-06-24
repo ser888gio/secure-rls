@@ -142,21 +142,6 @@ LLM-dependent steps are excluded from CI (no Ollama on runners); all determinist
 - **Python 3.14 Pydantic warnings:** `langchain-core` internally uses Pydantic V1 APIs deprecated in Python 3.14. The warnings are cosmetic and do not affect functionality; pinning to Python 3.11 in CI avoids them.
 - **Local LLM quality:** `llama3.1` (8B) follows tool-call protocols reliably. Smaller models may occasionally hallucinate numbers — the eval's leakage check catches this.
 
-## Time spent
-
-| Phase | Time |
-|-------|------|
-| Design & architecture decisions | ~1 h |
-| Data generation (`gen_data.py`) | ~0.5 h |
-| RLS data layer (`db.py`) | ~1 h |
-| Agent + tool binding (`agent.py`) | ~1.5 h |
-| Streamlit UI (`app.py`) | ~1 h |
-| Tests (`tests/`) | ~1 h |
-| Evaluation script (`eval.py`) | ~0.5 h |
-| CI/CD + README | ~0.5 h |
-| **Total** | **~7 h** |
-
----
 
 ## Future evolution
 
