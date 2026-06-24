@@ -40,3 +40,6 @@ jobs:
 
       - name: Run data-layer evaluation (leakage check)
         run: python eval.py
+
+      - name: Run prompt-injection evaluation (tool-level, deterministic)
+        run: python injection_eval.py
