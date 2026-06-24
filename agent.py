@@ -190,12 +190,14 @@ If a chart is generated, mention it will be displayed in the panel below.
 # Public API
 # ---------------------------------------------------------------------------
 
-def build_agent(tenant_id: str, model: str = OLLAMA_MODEL) -> Any:
+def build_agent(tenant_id: str, model: str = OLLAMA_MODEL,
+                actor: str | None = None) -> Any:
     """
     Build and return a LangGraph ReAct agent scoped to tenant_id.
     The returned agent accepts {'messages': [...]} and returns a state dict.
+    actor (the authenticated username) is recorded in the audit log.
     """
-    sda = SecureDataAccess(tenant_id)
+    sda = SecureDataAccess(tenant_id, actor=actor)
     tools = _make_tools(sda)
     llm = ChatOllama(model=model, temperature=0)
     agent = create_react_agent(

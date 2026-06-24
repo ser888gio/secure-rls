@@ -11,6 +11,8 @@ from typing import Literal
 
 import pandas as pd
 
+import audit
+
 DB_PATH = Path(__file__).parent / "employees.db"
 CSV_PATH = Path(__file__).parent / "employees.csv"
 
@@ -68,12 +70,22 @@ class SecureDataAccess:
     to widen the scope.
     """
 
-    def __init__(self, tenant_id: str, db_path: str | Path = DB_PATH) -> None:
+    def __init__(
+        self,
+        tenant_id: str,
+        db_path: str | Path = DB_PATH,
+        actor: str | None = None,
+    ) -> None:
         if tenant_id not in TENANTS:
             raise ValueError(f"Unknown tenant: {tenant_id!r}")
         self._tenant_id = tenant_id
         self._db_path = str(db_path)
         self._view = tenant_view(tenant_id)
+        # actor = authenticated username; defaults to tenant for non-UI callers
+        self._actor = actor or tenant_id
+
+    def _audit(self, action: str, params: dict, row_count: int) -> None:
+        audit.log_access(self._tenant_id, self._actor, action, params, row_count)
 
     # ------------------------------------------------------------------
     # Internal helpers
@@ -134,7 +146,9 @@ class SecureDataAccess:
         if department is not None:
             self._validate_department(department)
             df = df[df["department"] == department]
-        return df.copy()
+        df = df.copy()
+        self._audit("get_dataframe", {"department": department}, len(df))
+        return df
 
     def query(
         self,
@@ -170,6 +184,11 @@ class SecureDataAccess:
         con = self._connect()
         df = pd.read_sql_query(sql, con, params=params)
         con.close()
+        self._audit(
+            "query",
+            {"department": department, "columns": columns, "limit": limit},
+            len(df),
+        )
         return df
 
     def aggregate(
@@ -214,6 +233,12 @@ class SecureDataAccess:
         con = self._connect()
         df = pd.read_sql_query(sql, con, params=tuple(params_list))
         con.close()
+        self._audit(
+            "aggregate",
+            {"metric": metric, "group_by": group_by, "agg_fn": agg_fn,
+             "department": department},
+            len(df),
+        )
         return df
 
     def detect_anomalies(self, column: str = "salary") -> pd.DataFrame:
@@ -229,7 +254,9 @@ class SecureDataAccess:
         q3 = df[column].quantile(0.75)
         iqr = q3 - q1
         mask = (df[column] < q1 - 1.5 * iqr) | (df[column] > q3 + 1.5 * iqr)
-        return df[mask].drop(columns=["tenant_id"]).copy()
+        result = df[mask].drop(columns=["tenant_id"]).copy()
+        self._audit("detect_anomalies", {"column": column}, len(result))
+        return result
 
     def sample_rows(self, n: int = 3) -> pd.DataFrame:
         """Return n sample rows (no tenant_id) for embedding in the system prompt."""

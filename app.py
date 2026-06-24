@@ -5,6 +5,7 @@ from pathlib import Path
 import plotly.graph_objects as go
 import streamlit as st
 
+import audit
 from agent import build_agent, run_agent
 from db import DB_PATH, CSV_PATH, init_db
 
@@ -75,7 +76,7 @@ def show_login() -> None:
             st.session_state.username = username
             st.session_state.tenant_id = user["tenant_id"]
             st.session_state.display_name = user["display"]
-            st.session_state.agent = build_agent(user["tenant_id"])
+            st.session_state.agent = build_agent(user["tenant_id"], actor=username)
             st.session_state.messages = []
             st.session_state.tool_calls = []
             st.session_state.last_figure = None
@@ -180,11 +181,30 @@ def show_app() -> None:
         with st.expander("Security status"):
             st.markdown(
                 f"- **Authenticated tenant:** `{tenant}`\n"
-                "- **RLS enforcement:** parameterized SQL (`WHERE tenant_id = ?`)\n"
+                "- **RLS enforcement:** tenant-scoped view + connection authorizer\n"
                 "- **tenant_id in tool schemas:** ❌ No (bound server-side)\n"
                 "- **Raw SQL accepted by tools:** ❌ No\n"
                 "- **Column allow-list enforced:** ✅ Yes"
             )
+
+        with st.expander("Audit log (recent data access)"):
+            entries = [e for e in audit.read_recent(15) if e["tenant_id"] == tenant]
+            if entries:
+                st.dataframe(
+                    [
+                        {
+                            "time": e["ts"].split("T")[1][:8],
+                            "actor": e["actor"],
+                            "action": e["action"],
+                            "rows": e["row_count"],
+                        }
+                        for e in reversed(entries)
+                    ],
+                    use_container_width=True,
+                    hide_index=True,
+                )
+            else:
+                st.caption("No data access recorded yet this session.")
 
 # ---------------------------------------------------------------------------
 # Router
