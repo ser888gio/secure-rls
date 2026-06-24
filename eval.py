@@ -14,12 +14,9 @@ Usage:
 from __future__ import annotations
 
 import argparse
-import json
 import re
 import sys
-from dataclasses import dataclass, field
-
-import pandas as pd
+from dataclasses import dataclass
 
 from db import SecureDataAccess, init_db, DB_PATH, CSV_PATH
 

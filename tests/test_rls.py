@@ -6,9 +6,8 @@ These tests prove that:
 2. Adversarial filter arguments cannot widen access.
 3. Tool schemas exposed to the LLM contain no tenant_id parameter.
 """
-import json
 import pytest
-from db import SecureDataAccess, ALLOWED_COLUMNS, ALLOWED_DEPARTMENTS
+from db import SecureDataAccess
 
 
 TENANTS = ["acme", "beta", "gamma"]
@@ -34,8 +33,6 @@ class TestTenantIsolation:
         assert beta_ids.isdisjoint(gamma_ids)
 
     def test_query_only_own_tenant(self, acme, beta):
-        acme_names = set(acme.query(columns=["name"])["name"])
-        beta_names = set(beta.query(columns=["name"])["name"])
         # A name clash across tenants is theoretically possible (same full name),
         # but we verify that no user_id crosses tenants.
         acme_ids = set(acme.query(columns=["user_id"])["user_id"])
@@ -43,11 +40,9 @@ class TestTenantIsolation:
         assert acme_ids.isdisjoint(beta_ids)
 
     def test_aggregate_only_own_tenant(self, acme, beta):
-        avg_acme = acme.aggregate("salary", group_by=None)["avg_salary"].iloc[0]
-        avg_beta = beta.aggregate("salary", group_by=None)["avg_salary"].iloc[0]
         # Values may coincidentally match — but underlying data must be separate.
-        # We confirm row counts are per-tenant.
-        assert len(acme.get_dataframe()) != len(beta.get_dataframe()) or True  # sanity
+        # We confirm row counts differ (acme=333, beta=334).
+        assert len(acme.get_dataframe()) != len(beta.get_dataframe())
 
     def test_detect_anomalies_only_own_tenant(self, acme, beta):
         a_df = acme.get_dataframe()

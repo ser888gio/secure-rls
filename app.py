@@ -1,6 +1,5 @@
 """Streamlit UI — secure multi-tenant data analyst chat."""
 import json
-from pathlib import Path
 
 import plotly.graph_objects as go
 import streamlit as st
@@ -102,7 +101,7 @@ def show_app() -> None:
 
     # Sidebar
     with st.sidebar:
-        st.markdown(f"### 🔒 Logged in as")
+        st.markdown("### 🔒 Logged in as")
         st.markdown(f"**{st.session_state.username}**  \n`{display}` (`{tenant}`)")
         st.divider()
         st.markdown("**Sample questions:**")

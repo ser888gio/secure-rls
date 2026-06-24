@@ -10,9 +10,7 @@ from __future__ import annotations
 import json
 from typing import Any
 
-import pandas as pd
 import plotly.express as px
-import plotly.graph_objects as go
 from langchain_core.messages import HumanMessage
 from langchain_core.tools import tool
 from langchain_ollama import ChatOllama
