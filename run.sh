@@ -32,4 +32,4 @@ fi
 echo "Starting app at http://localhost:8501"
 echo "Credentials: acme_admin/acme123  beta_admin/beta123  gamma_admin/gamma123"
 echo ""
-streamlit run app.py
+python -m streamlit run app.py
