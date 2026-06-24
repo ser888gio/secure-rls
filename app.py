@@ -124,15 +124,16 @@ def show_app() -> None:
         "The agent can only access this tenant's data."
     )
 
+    # Chat input is pinned to the bottom of the viewport. It must be called at
+    # the top level (not nested in a column) for Streamlit to dock it there.
+    pending = st.session_state.pop("_pending_input", None)
+    user_input = st.chat_input("Ask about your employees…") or pending
+
     # Two-column layout: chat left, reasoning right
     chat_col, info_col = st.columns([3, 2])
 
     with chat_col:
         st.subheader("Chat")
-        # Render message history
-        for msg in st.session_state.messages:
-            with st.chat_message(msg["role"]):
-                st.markdown(msg["content"])
 
         # Sample questions — shown only before the session starts, then disappear
         if not st.session_state.messages:
@@ -148,10 +149,12 @@ def show_app() -> None:
             for q in samples:
                 if st.button(q, key=f"sample_{q[:20]}", use_container_width=True):
                     st.session_state._pending_input = q
+                    st.rerun()
 
-        # Pending input from sample buttons
-        pending = st.session_state.pop("_pending_input", None)
-        user_input = st.chat_input("Ask about your employees…") or pending
+        # Render message history (oldest at top, newest at bottom)
+        for msg in st.session_state.messages:
+            with st.chat_message(msg["role"]):
+                st.markdown(msg["content"])
 
         if user_input:
             st.session_state.messages.append({"role": "user", "content": user_input})
