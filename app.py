@@ -5,8 +5,12 @@ import plotly.graph_objects as go
 import streamlit as st
 
 import audit
-from agent import build_agent, run_agent
+from agent import build_agent, extract_memories, run_agent
 from db import DB_PATH, CSV_PATH, init_db
+from memory import MemoryStore
+
+# Number of recent raw turns replayed into the agent each request.
+HISTORY_WINDOW = 10
 
 # ---------------------------------------------------------------------------
 # Bootstrap DB on first run
@@ -46,6 +50,7 @@ def _init_state() -> None:
         "display_name": None,
         "username": None,
         "agent": None,
+        "memory": None,       # MemoryStore bound to (tenant, username)
         "messages": [],       # {"role": "user"|"assistant", "content": str}
         "tool_calls": [],     # list of tool-call dicts from last turn
         "last_figure": None,  # Plotly JSON str
@@ -76,6 +81,7 @@ def show_login() -> None:
             st.session_state.tenant_id = user["tenant_id"]
             st.session_state.display_name = user["display"]
             st.session_state.agent = build_agent(user["tenant_id"], actor=username)
+            st.session_state.memory = MemoryStore(user["tenant_id"], actor=username)
             st.session_state.messages = []
             st.session_state.tool_calls = []
             st.session_state.last_figure = None
@@ -112,6 +118,21 @@ def show_app() -> None:
         else:
             st.caption("No messages yet. Start the conversation to build your history.")
         st.divider()
+
+        # Long-term memory — persists across logout, scoped to this user.
+        st.markdown("### 🧠 What I remember")
+        memories = st.session_state.memory.all()
+        if memories:
+            for m in memories:
+                cols = st.columns([5, 1])
+                cols[0].markdown(f"`{m['mem_type']}` {m['content']}")
+                if cols[1].button("✕", key=f"del_mem_{m['id']}", help="Forget this"):
+                    st.session_state.memory.delete(m["id"])
+                    st.rerun()
+        else:
+            st.caption("I'll remember your preferences and recurring interests as we talk.")
+        st.divider()
+
         if st.button("🚪 Logout", use_container_width=True):
             for k in list(st.session_state.keys()):
                 del st.session_state[k]
@@ -154,19 +175,34 @@ def show_app() -> None:
         user_input = st.chat_input("Ask about your employees…") or pending
 
         if user_input:
+            # Prior turns (excluding the message we're about to send), capped to
+            # the recent window — this is the short-term raw memory.
+            history = st.session_state.messages[-HISTORY_WINDOW:]
+            memory_block = st.session_state.memory.as_prompt_block()
+
             st.session_state.messages.append({"role": "user", "content": user_input})
             with st.chat_message("user"):
                 st.markdown(user_input)
 
             with st.chat_message("assistant"):
                 with st.spinner("Thinking…"):
-                    result = run_agent(st.session_state.agent, user_input)
+                    result = run_agent(
+                        st.session_state.agent,
+                        user_input,
+                        history=history,
+                        memory_block=memory_block,
+                    )
 
                 answer = result["answer"]
                 st.markdown(answer)
                 st.session_state.messages.append({"role": "assistant", "content": answer})
                 st.session_state.tool_calls = result["tool_calls"]
                 st.session_state.last_figure = result.get("figure_json")
+
+                # Long-term memory: let the LLM tag anything memory-worthy from
+                # this exchange and persist it under (tenant, user).
+                for mem in extract_memories(user_input, answer):
+                    st.session_state.memory.add(mem["type"], mem["content"])
 
     with info_col:
         st.subheader("Reasoning & Tool Calls")
