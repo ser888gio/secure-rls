@@ -1,5 +1,5 @@
 """Pytest wrapper around the deterministic tool-level injection eval."""
-from injection_eval import _tool_level_eval
+from evals.injection_eval import _tool_level_eval
 
 
 def test_no_tool_level_injection_leaks():

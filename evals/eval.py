@@ -8,8 +8,8 @@ Two evaluation modes:
                          the full agent and checks answers for correctness and leakage.
 
 Usage:
-  python eval.py              # data-layer eval only
-  python eval.py --agent      # full agent eval (needs Ollama)
+  python evals/eval.py              # data-layer eval only
+  python evals/eval.py --agent      # full agent eval (needs Ollama)
 """
 from __future__ import annotations
 
@@ -17,8 +17,11 @@ import argparse
 import re
 import sys
 from dataclasses import dataclass
+from pathlib import Path
 
-from db import SecureDataAccess, init_db, DB_PATH, CSV_PATH
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from src.data.db import SecureDataAccess, init_db, DB_PATH, CSV_PATH
 
 # ---------------------------------------------------------------------------
 # Question bank
@@ -120,7 +123,7 @@ def _data_layer_eval() -> list[EvalResult]:
 
 def _agent_eval() -> list[EvalResult]:
     try:
-        from agent import build_agent, run_agent
+        from src.agent.agent import build_agent, run_agent
     except ImportError as e:
         print(f"Cannot import agent: {e}")
         return []
@@ -226,7 +229,7 @@ def main() -> None:
         agent_results = _agent_eval()
         _print_scorecard(agent_results, "Agent")
     else:
-        print("Tip: run `python eval.py --agent` for full LLM evaluation (needs Ollama).")
+        print("Tip: run `python evals/eval.py --agent` for full LLM evaluation (needs Ollama).")
 
     # Exit non-zero if any leakage test failed
     all_results = data_results + (agent_results if args.agent else [])

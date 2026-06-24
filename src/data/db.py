@@ -11,10 +11,12 @@ from typing import Literal
 
 import pandas as pd
 
-import audit
+from src.security import audit
 
-DB_PATH = Path(__file__).parent / "employees.db"
-CSV_PATH = Path(__file__).parent / "employees.csv"
+_ARTIFACTS = Path(__file__).parent.parent.parent / "data"
+
+DB_PATH = _ARTIFACTS / "employees.db"
+CSV_PATH = _ARTIFACTS / "employees.csv"
 
 TENANTS = ("acme", "beta", "gamma")
 

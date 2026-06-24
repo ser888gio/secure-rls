@@ -1,7 +1,7 @@
 """Tests for audit logging of data access."""
 import json
-import audit
-from db import SecureDataAccess
+from src.security import audit
+from src.data.db import SecureDataAccess
 
 
 def test_log_access_writes_entry(tmp_path):

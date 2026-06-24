@@ -12,7 +12,7 @@ import json
 from pathlib import Path
 from threading import Lock
 
-AUDIT_PATH = Path(__file__).parent / "audit.log"
+AUDIT_PATH = Path(__file__).parent.parent.parent / "audit.log"
 _lock = Lock()
 
 

@@ -30,16 +30,16 @@ jobs:
           ruff check . --select E,F,W --ignore E501
 
       - name: Generate dataset
-        run: python gen_data.py
+        run: python src/data/gen_data.py
 
       - name: Initialise SQLite DB
-        run: python -c "from db import init_db; init_db()"
+        run: python -c "from src.data.db import init_db; init_db()"
 
       - name: Run RLS security tests
         run: python -m pytest tests/ -v --tb=short
 
       - name: Run data-layer evaluation (leakage check)
-        run: python eval.py
+        run: python evals/eval.py
 
       - name: Run prompt-injection evaluation (tool-level, deterministic)
-        run: python injection_eval.py
+        run: python evals/injection_eval.py

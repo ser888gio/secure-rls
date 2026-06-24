@@ -1,0 +1,1001 @@
+user_id,tenant_id,name,department,salary,performance_score,hire_date,notes
+1,beta,Kimberly Thomas,Engineering,93000,1.9,2023-04-05,Excellent teamwork and communication skills.
+2,gamma,Emma Ramirez,Finance,91000,1.1,2016-01-19,Meets expectations; opportunities for growth in Q3.
+3,acme,Nicole Johnson,Marketing,103000,3.2,2023-01-11,"Quick learner, adapting well to new systems."
+4,beta,Mark Lewis,Finance,135000,3.4,2024-01-29,Shows initiative in cross-team projects.
+5,gamma,Rachel Ramirez,Engineering,111000,2.4,2016-09-28,Meets expectations; opportunities for growth in Q3.
+6,acme,Elizabeth Harris,Sales,78000,1.4,2024-07-03,"Reliable employee, handles pressure well."
+7,beta,Jennifer Campbell,Finance,115000,2.8,2016-05-26,Strong candidate for senior role in next cycle.
+8,gamma,Stephen Jackson,HR,65000,4.3,2021-12-08,Strong candidate for senior role in next cycle.
+9,acme,Alexander Jones,Sales,90000,1.2,2017-07-22,Consistently delivers quality work on schedule.
+10,beta,Sandra Miller,Sales,75000,2.5,2020-02-01,"Quick learner, adapting well to new systems."
+11,gamma,Melissa Thompson,Sales,86000,1.8,2017-12-29,Collaborative team player with positive attitude.
+12,acme,Samantha Hernandez,Engineering,170000,3.1,2017-09-29,High performer with leadership potential.
+13,beta,Paul Green,HR,85000,3.8,2017-06-18,"Quick learner, adapting well to new systems."
+14,gamma,Sandra Williams,Sales,72000,4.2,2019-07-02,Technical skills above average; working on soft skills.
+15,acme,Larry Rivera,Engineering,118000,2.3,2022-05-08,Proactive in taking ownership of projects.
+16,beta,Ryan Martinez,HR,102000,2.1,2017-10-07,Collaborative team player with positive attitude.
+17,gamma,Justin Ramirez,Finance,114000,4.6,2019-06-24,"Reliable employee, handles pressure well."
+18,acme,Angela Young,Marketing,79000,1.4,2015-07-12,Shows initiative in cross-team projects.
+19,beta,Benjamin Hernandez,Engineering,110000,4.2,2019-09-26,"Strong analytical mindset, great attention to detail."
+20,gamma,Timothy Hill,Engineering,140000,5.0,2020-12-07,Technical skills above average; working on soft skills.
+21,acme,Debra Campbell,Finance,82000,1.5,2024-12-03,Needs improvement in time management.
+22,beta,Joseph Jackson,Sales,110000,2.7,2020-02-02,"Strong contributor, consistently meets deadlines."
+23,gamma,Daniel Allen,Sales,131000,4.7,2024-10-05,"Quick learner, adapting well to new systems."
+24,acme,Nicole Gonzalez,Sales,132000,1.6,2023-07-21,High performer with leadership potential.
+25,beta,James Hill,Finance,150000,2.3,2015-03-21,Excellent teamwork and communication skills.
+26,gamma,Donald Brown,Sales,105000,2.0,2021-05-12,Excellent teamwork and communication skills.
+27,acme,William Carter,Engineering,154000,3.1,2016-05-30,High performer with leadership potential.
+28,beta,Lisa Taylor,HR,96000,3.1,2021-10-20,"Creative problem-solver, valued by the team."
+29,gamma,Janet Hall,Marketing,105000,1.8,2018-06-30,"Creative problem-solver, valued by the team."
+30,acme,Eric Lewis,Sales,122000,1.5,2017-07-09,Excellent teamwork and communication skills.
+31,beta,Emma Scott,Sales,68000,1.9,2017-06-21,"Strong contributor, consistently meets deadlines."
+32,gamma,Linda Anderson,Engineering,173000,1.3,2015-05-09,Shows initiative in cross-team projects.
+33,acme,Angela Thomas,Sales,74000,2.1,2020-06-11,Meets expectations; opportunities for growth in Q3.
+34,beta,Patrick Torres,Finance,97000,3.3,2017-09-22,Consistently delivers quality work on schedule.
+35,gamma,Matthew Miller,HR,87000,1.4,2019-11-01,"Reliable employee, handles pressure well."
+36,acme,Cynthia Campbell,HR,87000,1.2,2022-04-30,"Quick learner, adapting well to new systems."
+37,beta,Stephanie Campbell,Engineering,98000,2.4,2024-08-30,Excellent teamwork and communication skills.
+38,gamma,Matthew Wright,Marketing,83000,2.8,2019-09-25,High performer with leadership potential.
+39,acme,Ashley Jones,Sales,126000,2.8,2024-08-29,Shows initiative in cross-team projects.
+40,beta,Michael Adams,Finance,93000,5.0,2024-05-17,"Strong contributor, consistently meets deadlines."
+41,gamma,Lisa Clark,Engineering,121000,2.9,2017-05-25,Shows initiative in cross-team projects.
+42,acme,Lisa Harris,HR,64000,1.0,2019-05-19,Technical skills above average; working on soft skills.
+43,beta,Jason Hall,HR,79000,4.8,2023-10-14,Needs improvement in time management.
+44,gamma,Matthew Jackson,HR,70000,1.9,2015-08-28,"Strong analytical mindset, great attention to detail."
+45,acme,Joshua Brown,Finance,88000,1.2,2020-05-06,Needs improvement in time management.
+46,beta,Linda Allen,Finance,101000,1.3,2017-01-31,Excellent teamwork and communication skills.
+47,gamma,Gregory Thomas,Finance,89000,2.6,2024-12-25,"Strong analytical mindset, great attention to detail."
+48,acme,Scott Williams,Marketing,108000,3.5,2019-09-14,"Quick learner, adapting well to new systems."
+49,beta,Joshua Taylor,Finance,149000,1.8,2023-01-12,"Reliable employee, handles pressure well."
+50,gamma,Ronald Rodriguez,Marketing,87000,3.7,2018-05-13,Proactive in taking ownership of projects.
+51,acme,Mary Robinson,Sales,75000,3.5,2021-04-25,Excellent teamwork and communication skills.
+52,beta,Margaret Allen,Engineering,160000,2.1,2018-11-30,Strong candidate for senior role in next cycle.
+53,gamma,Melissa Jackson,Engineering,122000,1.6,2024-05-08,Needs improvement in time management.
+54,acme,Mary Nelson,Sales,134000,4.3,2018-05-11,Strong candidate for senior role in next cycle.
+55,beta,Dorothy Davis,Engineering,108000,4.6,2023-04-29,Needs improvement in time management.
+56,gamma,Andrew Hill,Marketing,88000,1.8,2018-11-05,Meets expectations; opportunities for growth in Q3.
+57,acme,Gary Taylor,Sales,131000,4.6,2024-06-27,"Strong contributor, consistently meets deadlines."
+58,beta,Jason Moore,Engineering,173000,1.2,2018-09-28,Consistently delivers quality work on schedule.
+59,gamma,Dorothy Hernandez,Marketing,112000,4.0,2021-03-09,Collaborative team player with positive attitude.
+60,acme,Mary Davis,HR,97000,1.3,2024-11-26,Collaborative team player with positive attitude.
+61,beta,Robert White,Marketing,106000,3.3,2016-08-29,"Creative problem-solver, valued by the team."
+62,gamma,Donna White,Marketing,73000,4.6,2023-12-05,Shows initiative in cross-team projects.
+63,acme,Anthony Baker,Engineering,137000,2.0,2016-02-26,"Reliable employee, handles pressure well."
+64,beta,Helen Mitchell,Finance,133000,1.6,2017-08-27,Shows initiative in cross-team projects.
+65,gamma,Daniel Clark,Marketing,122000,1.1,2023-04-05,Strong candidate for senior role in next cycle.
+66,acme,Christine Mitchell,Sales,119000,4.2,2017-12-28,High performer with leadership potential.
+67,beta,Robert Walker,Engineering,140000,1.9,2024-02-27,Strong candidate for senior role in next cycle.
+68,gamma,Donna Anderson,HR,83000,1.9,2022-05-27,Meets expectations; opportunities for growth in Q3.
+69,acme,Kimberly Jones,HR,82000,4.9,2018-02-17,"Reliable employee, handles pressure well."
+70,beta,Gregory Wright,Finance,132000,2.3,2015-04-24,Excellent teamwork and communication skills.
+71,gamma,Justin Taylor,Sales,88000,1.2,2021-09-09,"Creative problem-solver, valued by the team."
+72,acme,Sharon Hill,Sales,106000,4.9,2016-04-18,"Creative problem-solver, valued by the team."
+73,beta,Steven Williams,Finance,105000,3.8,2015-01-07,Needs improvement in time management.
+74,gamma,George Ramirez,Finance,106000,1.3,2022-06-13,Strong candidate for senior role in next cycle.
+75,acme,Raymond Davis,Sales,106000,3.9,2018-05-15,Needs improvement in time management.
+76,beta,Michelle Sanchez,Sales,119000,3.8,2021-03-20,High performer with leadership potential.
+77,gamma,Christine Harris,Marketing,98000,3.7,2016-12-13,"Strong analytical mindset, great attention to detail."
+78,acme,Stephanie Scott,Finance,119000,4.3,2018-05-29,Technical skills above average; working on soft skills.
+79,beta,Justin Hill,Marketing,98000,3.6,2020-03-19,Proactive in taking ownership of projects.
+80,gamma,Margaret Allen,HR,104000,2.9,2023-12-05,Collaborative team player with positive attitude.
+81,acme,David Jackson,Marketing,113000,3.1,2022-02-05,"Strong analytical mindset, great attention to detail."
+82,beta,Donald Baker,Sales,77000,2.2,2024-01-17,Meets expectations; opportunities for growth in Q3.
+83,gamma,Jennifer Thomas,Marketing,72000,4.9,2021-11-08,Shows initiative in cross-team projects.
+84,acme,Rebecca Green,Engineering,150000,3.3,2023-01-21,Collaborative team player with positive attitude.
+85,beta,Stephanie Thomas,HR,92000,1.6,2022-09-17,"Strong contributor, consistently meets deadlines."
+86,gamma,Mark Lopez,Engineering,146000,4.2,2022-10-21,Needs improvement in time management.
+87,acme,Brenda Thomas,HR,63000,4.7,2016-05-12,Proactive in taking ownership of projects.
+88,beta,Cynthia Nelson,Marketing,123000,3.1,2021-04-08,"Strong analytical mindset, great attention to detail."
+89,gamma,Brandon Campbell,Sales,123000,4.6,2019-10-14,Shows initiative in cross-team projects.
+90,acme,Christopher Mitchell,Finance,138000,4.4,2020-01-18,Technical skills above average; working on soft skills.
+91,beta,Samantha Moore,Marketing,125000,4.1,2020-11-05,Proactive in taking ownership of projects.
+92,gamma,Jeffrey Jones,Marketing,88000,3.9,2017-08-18,Technical skills above average; working on soft skills.
+93,acme,Anna Garcia,Sales,107000,1.6,2017-08-05,"Creative problem-solver, valued by the team."
+94,beta,Margaret Jones,Marketing,116000,2.7,2018-09-17,Needs improvement in time management.
+95,gamma,Linda Wilson,HR,87000,4.3,2019-05-15,Strong candidate for senior role in next cycle.
+96,acme,Pamela Harris,Finance,83000,2.9,2018-12-11,Technical skills above average; working on soft skills.
+97,beta,Jonathan Mitchell,HR,87000,3.9,2023-12-21,"Strong analytical mindset, great attention to detail."
+98,gamma,Mark Moore,Marketing,102000,2.7,2015-04-29,"Creative problem-solver, valued by the team."
+99,acme,Patrick Hernandez,Sales,118000,4.4,2016-06-06,"Strong analytical mindset, great attention to detail."
+100,beta,Ronald Nguyen,Finance,84000,3.3,2015-04-22,Excellent teamwork and communication skills.
+101,gamma,Cynthia Lopez,HR,69000,1.2,2019-04-02,"Reliable employee, handles pressure well."
+102,acme,Michelle Perez,Marketing,100000,4.0,2019-04-02,Technical skills above average; working on soft skills.
+103,beta,David Walker,HR,77000,1.1,2021-01-18,"Strong contributor, consistently meets deadlines."
+104,gamma,Katherine Jones,Sales,94000,4.1,2022-04-23,"Strong contributor, consistently meets deadlines."
+105,acme,Betty Johnson,Engineering,122000,3.5,2017-09-04,High performer with leadership potential.
+106,beta,Joseph Torres,HR,104000,4.8,2020-03-19,Collaborative team player with positive attitude.
+107,gamma,Lisa Hill,Sales,113000,3.4,2023-05-22,Collaborative team player with positive attitude.
+108,acme,Donna Miller,Engineering,111000,3.3,2018-07-01,"Strong analytical mindset, great attention to detail."
+109,beta,Carolyn Gonzalez,HR,86000,1.3,2022-09-29,Shows initiative in cross-team projects.
+110,gamma,Rachel Roberts,Marketing,77000,2.2,2022-09-03,"Strong analytical mindset, great attention to detail."
+111,acme,Jennifer Thompson,Engineering,164000,3.1,2022-06-02,"Reliable employee, handles pressure well."
+112,beta,Samuel Perez,Engineering,156000,1.1,2019-09-17,Shows initiative in cross-team projects.
+113,gamma,Sharon White,HR,67000,3.5,2024-04-17,Proactive in taking ownership of projects.
+114,acme,Daniel Campbell,Marketing,99000,3.1,2022-04-18,Technical skills above average; working on soft skills.
+115,beta,Cynthia Ramirez,Finance,143000,4.3,2021-08-23,Technical skills above average; working on soft skills.
+116,gamma,Elizabeth Moore,Sales,97000,4.5,2017-09-25,Consistently delivers quality work on schedule.
+117,acme,Brandon Nelson,HR,97000,2.5,2015-04-28,Proactive in taking ownership of projects.
+118,beta,Gary Wilson,Sales,89000,2.4,2017-11-24,"Reliable employee, handles pressure well."
+119,gamma,Brenda Smith,Sales,101000,3.1,2017-02-21,Excellent teamwork and communication skills.
+120,acme,Edward Young,Marketing,117000,3.2,2017-09-11,Collaborative team player with positive attitude.
+121,beta,Carolyn Young,HR,102000,2.8,2015-03-12,Excellent teamwork and communication skills.
+122,gamma,Stephanie Hall,Sales,94000,2.0,2022-06-12,"Strong analytical mindset, great attention to detail."
+123,acme,Stephen King,Sales,127000,2.4,2023-05-14,Needs improvement in time management.
+124,beta,Rachel Robinson,Sales,111000,2.1,2017-10-26,Meets expectations; opportunities for growth in Q3.
+125,gamma,Joshua Davis,Engineering,115000,4.0,2023-07-19,Collaborative team player with positive attitude.
+126,acme,Margaret Mitchell,Marketing,83000,2.9,2023-02-15,"Strong analytical mindset, great attention to detail."
+127,beta,Richard Gonzalez,Finance,117000,2.2,2019-01-18,High performer with leadership potential.
+128,gamma,Alexander Wright,Sales,67000,1.5,2015-07-06,"Strong contributor, consistently meets deadlines."
+129,acme,Rachel Rodriguez,Finance,118000,3.6,2023-06-11,Proactive in taking ownership of projects.
+130,beta,Pamela Jackson,Engineering,92000,2.9,2019-12-10,"Reliable employee, handles pressure well."
+131,gamma,Steven Walker,Marketing,73000,1.5,2015-09-25,"Creative problem-solver, valued by the team."
+132,acme,Pamela Green,HR,65000,3.7,2016-09-13,High performer with leadership potential.
+133,beta,David Thomas,Finance,120000,1.5,2023-07-29,"Creative problem-solver, valued by the team."
+134,gamma,Eric Harris,Finance,110000,2.8,2019-12-19,Technical skills above average; working on soft skills.
+135,acme,Donna Torres,Finance,136000,3.5,2021-11-02,Collaborative team player with positive attitude.
+136,beta,Benjamin Wilson,Engineering,117000,2.1,2015-11-29,High performer with leadership potential.
+137,gamma,Stephen Jones,Marketing,81000,1.6,2019-08-01,Proactive in taking ownership of projects.
+138,acme,Emily Williams,Finance,142000,1.9,2022-12-05,Technical skills above average; working on soft skills.
+139,beta,Debra Anderson,HR,65000,4.7,2023-11-01,Consistently delivers quality work on schedule.
+140,gamma,Jason Davis,Finance,106000,3.2,2022-04-06,High performer with leadership potential.
+141,acme,Barbara Brown,Sales,84000,1.7,2018-06-13,"Strong analytical mindset, great attention to detail."
+142,beta,Jeffrey Davis,Finance,118000,2.9,2018-05-30,Collaborative team player with positive attitude.
+143,gamma,Nicholas Wright,HR,78000,3.0,2015-11-26,"Strong analytical mindset, great attention to detail."
+144,acme,Michelle Hill,Engineering,147000,2.0,2016-01-10,Meets expectations; opportunities for growth in Q3.
+145,beta,Gregory Moore,Finance,83000,3.3,2023-07-23,Consistently delivers quality work on schedule.
+146,gamma,Eric Adams,Marketing,101000,2.8,2018-02-13,High performer with leadership potential.
+147,acme,Samantha Young,Finance,137000,4.9,2020-04-09,"Reliable employee, handles pressure well."
+148,beta,Michelle Nelson,HR,82000,1.4,2016-10-20,"Reliable employee, handles pressure well."
+149,gamma,Amy Jackson,HR,105000,3.7,2019-06-29,Shows initiative in cross-team projects.
+150,acme,Ryan Garcia,Finance,85000,2.3,2018-08-17,Excellent teamwork and communication skills.
+151,beta,James Nelson,HR,94000,4.5,2020-03-07,"Creative problem-solver, valued by the team."
+152,gamma,Eric White,Engineering,115000,3.5,2020-08-03,"Quick learner, adapting well to new systems."
+153,acme,Michael Wilson,HR,110000,2.1,2016-06-20,Strong candidate for senior role in next cycle.
+154,beta,Rachel Young,Sales,122000,1.5,2022-01-24,"Strong analytical mindset, great attention to detail."
+155,gamma,Christopher Martin,Marketing,117000,3.2,2021-03-12,"Creative problem-solver, valued by the team."
+156,acme,Joseph Robinson,Engineering,119000,4.8,2022-04-07,Shows initiative in cross-team projects.
+157,beta,Carolyn Jackson,Marketing,103000,3.0,2018-01-24,"Creative problem-solver, valued by the team."
+158,gamma,Ashley Robinson,HR,91000,3.2,2019-04-21,Meets expectations; opportunities for growth in Q3.
+159,acme,Sarah Jones,Finance,147000,2.1,2023-11-10,Shows initiative in cross-team projects.
+160,beta,Nicholas Moore,HR,82000,4.3,2018-03-04,Collaborative team player with positive attitude.
+161,gamma,Karen Lewis,Sales,129000,3.2,2018-11-14,"Reliable employee, handles pressure well."
+162,acme,Ryan Lee,Finance,129000,4.5,2022-10-27,Meets expectations; opportunities for growth in Q3.
+163,beta,Sandra Roberts,Finance,130000,2.6,2018-07-27,Collaborative team player with positive attitude.
+164,gamma,Timothy Harris,HR,106000,5.0,2023-11-20,Shows initiative in cross-team projects.
+165,acme,Robert Rodriguez,Marketing,102000,3.0,2021-08-14,"Reliable employee, handles pressure well."
+166,beta,Richard King,Engineering,148000,4.6,2015-03-04,Collaborative team player with positive attitude.
+167,gamma,Katherine Martinez,Marketing,97000,1.3,2023-10-07,Technical skills above average; working on soft skills.
+168,acme,Katherine Garcia,Sales,117000,4.4,2024-07-23,"Quick learner, adapting well to new systems."
+169,beta,Joshua Green,Finance,130000,3.9,2023-07-08,Proactive in taking ownership of projects.
+170,gamma,Helen Jones,Finance,85000,1.9,2022-09-04,Strong candidate for senior role in next cycle.
+171,acme,Elizabeth Ramirez,Sales,95000,4.9,2023-07-12,"Quick learner, adapting well to new systems."
+172,beta,Lisa Hall,Engineering,148000,2.2,2015-04-29,"Strong contributor, consistently meets deadlines."
+173,gamma,Emily Thompson,Sales,72000,2.5,2016-08-19,Meets expectations; opportunities for growth in Q3.
+174,acme,Larry Baker,Finance,134000,4.2,2016-11-27,High performer with leadership potential.
+175,beta,Timothy Flores,Engineering,170000,3.7,2020-07-31,Strong candidate for senior role in next cycle.
+176,gamma,Sandra Robinson,Finance,99000,3.6,2020-02-26,Technical skills above average; working on soft skills.
+177,acme,Andrew Baker,Engineering,151000,3.2,2015-10-30,Proactive in taking ownership of projects.
+178,beta,Samantha Ramirez,Sales,104000,3.8,2020-02-15,Shows initiative in cross-team projects.
+179,gamma,Deborah Walker,Sales,91000,1.4,2019-04-12,"Strong analytical mindset, great attention to detail."
+180,acme,Rachel Jackson,Sales,104000,1.1,2024-04-22,"Quick learner, adapting well to new systems."
+181,beta,Mary Torres,HR,78000,4.5,2023-09-23,Collaborative team player with positive attitude.
+182,gamma,Amy Jackson,Engineering,169000,4.1,2017-07-31,"Strong analytical mindset, great attention to detail."
+183,acme,Samantha Gonzalez,Sales,94000,3.5,2022-08-08,Consistently delivers quality work on schedule.
+184,beta,Richard Green,Marketing,111000,3.6,2018-06-19,Consistently delivers quality work on schedule.
+185,gamma,Justin White,HR,62000,3.9,2016-01-05,Strong candidate for senior role in next cycle.
+186,acme,Rebecca Lopez,Sales,108000,1.8,2023-10-27,Needs improvement in time management.
+187,beta,Nicholas Moore,Sales,135000,4.3,2017-11-18,Strong candidate for senior role in next cycle.
+188,gamma,Carol Davis,HR,79000,2.9,2015-11-05,High performer with leadership potential.
+189,acme,Gregory Campbell,Marketing,126000,3.7,2019-06-16,Shows initiative in cross-team projects.
+190,beta,Elizabeth Sanchez,Finance,128000,1.1,2021-01-06,Excellent teamwork and communication skills.
+191,gamma,Gregory Mitchell,HR,84000,3.7,2021-07-22,"Creative problem-solver, valued by the team."
+192,acme,Gregory Anderson,Sales,79000,2.9,2021-12-12,Strong candidate for senior role in next cycle.
+193,beta,Brandon Anderson,Finance,123000,3.6,2022-02-15,Shows initiative in cross-team projects.
+194,gamma,Kenneth Adams,HR,106000,2.6,2016-07-26,"Strong contributor, consistently meets deadlines."
+195,acme,Amy Davis,Engineering,130000,1.4,2024-12-13,Needs improvement in time management.
+196,beta,Ryan White,Marketing,95000,3.7,2023-05-02,Collaborative team player with positive attitude.
+197,gamma,Emma Mitchell,Finance,135000,3.9,2024-12-05,"Creative problem-solver, valued by the team."
+198,acme,Brandon Clark,Engineering,154000,4.8,2018-02-19,"Strong contributor, consistently meets deadlines."
+199,beta,Jeffrey Lewis,Sales,93000,4.8,2024-08-04,"Reliable employee, handles pressure well."
+200,gamma,Melissa Wright,Engineering,180000,4.6,2022-03-26,"Reliable employee, handles pressure well."
+201,acme,Kimberly Gonzalez,Engineering,142000,4.9,2024-07-05,Shows initiative in cross-team projects.
+202,beta,Raymond Wilson,HR,66000,3.6,2021-09-11,"Strong contributor, consistently meets deadlines."
+203,gamma,Ashley Rodriguez,Engineering,134000,4.1,2017-04-20,Excellent teamwork and communication skills.
+204,acme,Emma Wilson,Finance,107000,4.3,2017-08-12,"Reliable employee, handles pressure well."
+205,beta,Scott Smith,Marketing,122000,2.1,2016-08-15,High performer with leadership potential.
+206,gamma,Daniel Davis,Finance,113000,3.6,2015-04-16,High performer with leadership potential.
+207,acme,Donald Nguyen,Engineering,137000,2.3,2016-12-14,Technical skills above average; working on soft skills.
+208,beta,Rebecca King,Engineering,107000,1.5,2015-09-18,Proactive in taking ownership of projects.
+209,gamma,Angela Nguyen,HR,84000,1.4,2020-08-25,Meets expectations; opportunities for growth in Q3.
+210,acme,Janet Nelson,Finance,86000,3.1,2020-02-20,"Quick learner, adapting well to new systems."
+211,beta,Kathleen Sanchez,Engineering,98000,2.7,2016-03-18,Proactive in taking ownership of projects.
+212,gamma,David Lee,HR,65000,3.4,2015-09-27,High performer with leadership potential.
+213,acme,Carolyn Lee,Sales,137000,2.5,2021-09-12,Needs improvement in time management.
+214,beta,Nicholas Hill,Sales,124000,2.7,2023-11-23,Collaborative team player with positive attitude.
+215,gamma,Katherine Roberts,Engineering,176000,3.2,2024-09-15,Meets expectations; opportunities for growth in Q3.
+216,acme,Sandra Clark,HR,90000,2.4,2020-02-01,"Creative problem-solver, valued by the team."
+217,beta,Richard Lee,HR,108000,2.7,2022-06-17,Technical skills above average; working on soft skills.
+218,gamma,Debra Walker,Sales,85000,1.3,2024-04-29,Excellent teamwork and communication skills.
+219,acme,Richard Mitchell,Engineering,147000,4.0,2024-02-08,High performer with leadership potential.
+220,beta,Emma Scott,Finance,88000,3.2,2022-07-07,Excellent teamwork and communication skills.
+221,gamma,Christine Carter,HR,83000,2.7,2023-02-01,"Strong contributor, consistently meets deadlines."
+222,acme,Amanda Miller,Sales,106000,3.3,2017-05-21,High performer with leadership potential.
+223,beta,Susan Thompson,HR,75000,4.4,2019-02-14,Excellent teamwork and communication skills.
+224,gamma,Jason Scott,Sales,95000,4.9,2024-03-06,"Strong analytical mindset, great attention to detail."
+225,acme,Nicole Nelson,Finance,83000,4.3,2017-12-31,"Strong contributor, consistently meets deadlines."
+226,beta,Rachel Carter,Marketing,88000,2.2,2018-10-23,"Reliable employee, handles pressure well."
+227,gamma,Charles Torres,Engineering,114000,3.6,2015-10-13,High performer with leadership potential.
+228,acme,Shirley Wilson,Engineering,102000,2.5,2020-02-02,"Reliable employee, handles pressure well."
+229,beta,Donna Campbell,Marketing,94000,2.3,2021-05-13,"Strong analytical mindset, great attention to detail."
+230,gamma,Karen Hernandez,Engineering,97000,4.0,2015-07-23,"Quick learner, adapting well to new systems."
+231,acme,Jeffrey Nelson,Engineering,126000,2.7,2021-10-22,Proactive in taking ownership of projects.
+232,beta,Margaret Carter,HR,78000,3.0,2018-11-14,"Creative problem-solver, valued by the team."
+233,gamma,Gregory Baker,Engineering,127000,3.4,2020-11-28,"Quick learner, adapting well to new systems."
+234,acme,Mark Sanchez,Sales,71000,4.9,2015-08-13,"Strong contributor, consistently meets deadlines."
+235,beta,Margaret Roberts,Marketing,90000,1.5,2017-11-12,Technical skills above average; working on soft skills.
+236,gamma,James Young,Sales,81000,4.0,2016-12-20,High performer with leadership potential.
+237,acme,Alexander Anderson,HR,95000,3.0,2024-05-06,"Quick learner, adapting well to new systems."
+238,beta,Ronald Mitchell,Sales,74000,1.2,2015-03-18,Proactive in taking ownership of projects.
+239,gamma,Pamela Ramirez,Engineering,131000,3.3,2022-12-16,"Quick learner, adapting well to new systems."
+240,acme,Joseph Sanchez,HR,79000,1.1,2018-08-23,High performer with leadership potential.
+241,beta,Frank White,Finance,140000,1.4,2024-06-21,Excellent teamwork and communication skills.
+242,gamma,Emma Sanchez,Marketing,99000,3.1,2019-06-10,Shows initiative in cross-team projects.
+243,acme,Mark Perez,Sales,110000,4.1,2015-11-09,Needs improvement in time management.
+244,beta,Angela Gonzalez,Engineering,160000,4.6,2018-12-02,"Reliable employee, handles pressure well."
+245,gamma,Susan Martinez,Marketing,85000,2.0,2016-12-11,"Strong analytical mindset, great attention to detail."
+246,acme,Katherine Jones,Marketing,120000,1.7,2023-09-01,"Quick learner, adapting well to new systems."
+247,beta,Larry Carter,HR,90000,3.3,2022-08-21,Strong candidate for senior role in next cycle.
+248,gamma,Benjamin Lee,Finance,122000,1.6,2015-10-07,Proactive in taking ownership of projects.
+249,acme,Kenneth Moore,HR,101000,3.4,2018-12-12,Needs improvement in time management.
+250,beta,Cynthia Lewis,Engineering,131000,1.2,2019-02-19,Shows initiative in cross-team projects.
+251,gamma,Samuel Garcia,Sales,75000,3.5,2020-09-07,"Creative problem-solver, valued by the team."
+252,acme,Stephen Mitchell,HR,98000,4.6,2020-01-17,Strong candidate for senior role in next cycle.
+253,beta,Michelle Hill,Finance,105000,2.9,2016-09-09,"Strong contributor, consistently meets deadlines."
+254,gamma,Carol Rivera,HR,67000,1.3,2022-03-31,High performer with leadership potential.
+255,acme,Alexander Lewis,Engineering,122000,5.0,2020-11-16,Needs improvement in time management.
+256,beta,George White,Finance,101000,4.7,2019-05-06,"Creative problem-solver, valued by the team."
+257,gamma,Benjamin Adams,Sales,72000,2.3,2018-09-12,Excellent teamwork and communication skills.
+258,acme,Andrew Taylor,Finance,131000,3.9,2022-05-13,Strong candidate for senior role in next cycle.
+259,beta,Kevin Garcia,Finance,100000,3.3,2016-08-02,Strong candidate for senior role in next cycle.
+260,gamma,Katherine Hall,Sales,106000,3.6,2016-06-12,"Strong analytical mindset, great attention to detail."
+261,acme,Brenda Harris,Engineering,131000,3.6,2018-09-07,Shows initiative in cross-team projects.
+262,beta,Rachel Mitchell,Marketing,114000,5.0,2020-11-26,Excellent teamwork and communication skills.
+263,gamma,George Johnson,HR,93000,2.5,2017-01-08,Meets expectations; opportunities for growth in Q3.
+264,acme,Matthew Anderson,Sales,129000,5.0,2016-09-26,Excellent teamwork and communication skills.
+265,beta,Nicholas Roberts,Sales,78000,3.2,2023-04-14,Strong candidate for senior role in next cycle.
+266,gamma,Raymond Perez,Finance,85000,4.5,2021-12-06,High performer with leadership potential.
+267,acme,Karen Hernandez,Finance,129000,1.7,2022-10-08,Consistently delivers quality work on schedule.
+268,beta,Patrick Lewis,Finance,102000,1.2,2019-02-01,"Quick learner, adapting well to new systems."
+269,gamma,Brandon Jackson,Marketing,99000,4.0,2023-10-16,Proactive in taking ownership of projects.
+270,acme,Donald Martin,Marketing,105000,4.9,2023-10-18,Proactive in taking ownership of projects.
+271,beta,Gregory Torres,Marketing,94000,4.9,2020-03-06,Consistently delivers quality work on schedule.
+272,gamma,Nicholas King,Sales,115000,2.7,2016-10-25,Shows initiative in cross-team projects.
+273,acme,Nicole Rodriguez,Marketing,123000,4.5,2015-08-02,"Quick learner, adapting well to new systems."
+274,beta,Stephen Miller,HR,84000,3.8,2020-10-14,Shows initiative in cross-team projects.
+275,gamma,David Carter,Engineering,127000,1.6,2020-01-15,Strong candidate for senior role in next cycle.
+276,acme,Sharon Garcia,Finance,99000,4.8,2017-06-28,Shows initiative in cross-team projects.
+277,beta,Patricia Clark,HR,83000,1.2,2020-08-18,"Reliable employee, handles pressure well."
+278,gamma,David White,Marketing,95000,1.9,2018-07-29,Strong candidate for senior role in next cycle.
+279,acme,Kevin Martinez,Engineering,175000,1.6,2018-03-21,Strong candidate for senior role in next cycle.
+280,beta,Sarah Carter,HR,106000,3.8,2020-01-12,"Strong analytical mindset, great attention to detail."
+281,gamma,John Taylor,Engineering,100000,1.9,2016-09-04,Needs improvement in time management.
+282,acme,Jason Davis,Finance,149000,4.1,2017-08-31,Technical skills above average; working on soft skills.
+283,beta,Donald Clark,Engineering,96000,3.6,2021-12-26,Proactive in taking ownership of projects.
+284,gamma,Amy Hill,Engineering,105000,3.1,2022-02-01,Needs improvement in time management.
+285,acme,Carolyn Martinez,Finance,112000,2.2,2015-01-07,"Strong analytical mindset, great attention to detail."
+286,beta,Pamela Clark,Sales,97000,1.7,2022-06-30,Excellent teamwork and communication skills.
+287,gamma,William King,Finance,127000,3.2,2023-10-27,Needs improvement in time management.
+288,acme,Deborah Walker,Finance,83000,1.2,2019-05-04,"Reliable employee, handles pressure well."
+289,beta,Amanda Jones,Sales,67000,2.4,2023-03-22,"Quick learner, adapting well to new systems."
+290,gamma,Kevin Rodriguez,Engineering,166000,1.2,2021-02-14,"Reliable employee, handles pressure well."
+291,acme,Debra Robinson,Marketing,124000,4.9,2020-05-14,"Quick learner, adapting well to new systems."
+292,beta,Sarah Jones,Marketing,123000,3.9,2020-02-18,"Strong contributor, consistently meets deadlines."
+293,gamma,Jennifer Gonzalez,Sales,91000,4.5,2018-07-16,Strong candidate for senior role in next cycle.
+294,acme,Ronald Wright,Sales,133000,2.9,2015-05-30,Consistently delivers quality work on schedule.
+295,beta,Amanda Roberts,Marketing,89000,1.2,2022-05-09,"Reliable employee, handles pressure well."
+296,gamma,Melissa Ramirez,Sales,81000,4.6,2023-05-03,Proactive in taking ownership of projects.
+297,acme,Nancy Young,HR,82000,3.8,2019-02-13,Strong candidate for senior role in next cycle.
+298,beta,David Campbell,Finance,115000,2.7,2019-10-30,"Strong analytical mindset, great attention to detail."
+299,gamma,Emily Lee,Marketing,106000,1.4,2018-09-05,"Quick learner, adapting well to new systems."
+300,acme,Laura Hill,Sales,105000,3.9,2016-11-13,Collaborative team player with positive attitude.
+301,beta,Laura Williams,HR,83000,3.9,2018-12-15,"Strong analytical mindset, great attention to detail."
+302,gamma,Samantha Brown,HR,78000,1.3,2022-02-24,"Creative problem-solver, valued by the team."
+303,acme,Gregory Hernandez,Sales,132000,4.8,2016-08-07,Shows initiative in cross-team projects.
+304,beta,Robert Rodriguez,Finance,137000,1.3,2023-09-24,"Quick learner, adapting well to new systems."
+305,gamma,Deborah Torres,Sales,112000,1.1,2016-09-20,"Quick learner, adapting well to new systems."
+306,acme,Melissa Lewis,HR,84000,4.1,2021-06-08,High performer with leadership potential.
+307,beta,Ronald Lee,Finance,128000,3.6,2017-10-19,Excellent teamwork and communication skills.
+308,gamma,Amy King,Engineering,114000,2.5,2021-04-19,Excellent teamwork and communication skills.
+309,acme,Alexander Lewis,Sales,99000,1.9,2021-11-11,Technical skills above average; working on soft skills.
+310,beta,Jessica Rodriguez,HR,73000,4.4,2020-01-26,High performer with leadership potential.
+311,gamma,Debra Lee,HR,66000,3.7,2022-12-16,Excellent teamwork and communication skills.
+312,acme,Kenneth Hernandez,Finance,118000,3.8,2022-11-08,"Quick learner, adapting well to new systems."
+313,beta,George Allen,Marketing,122000,1.9,2017-04-03,Consistently delivers quality work on schedule.
+314,gamma,Amy Johnson,Marketing,86000,2.4,2021-06-02,"Reliable employee, handles pressure well."
+315,acme,Thomas Flores,HR,96000,4.5,2015-09-27,Technical skills above average; working on soft skills.
+316,beta,Patrick Walker,HR,107000,3.1,2023-08-17,"Creative problem-solver, valued by the team."
+317,gamma,Thomas Lee,Finance,90000,3.6,2020-01-18,Proactive in taking ownership of projects.
+318,acme,Thomas Roberts,Finance,125000,3.2,2021-08-04,High performer with leadership potential.
+319,beta,Nicholas Brown,Marketing,98000,4.3,2020-10-23,High performer with leadership potential.
+320,gamma,Christopher Lee,Sales,87000,4.7,2017-07-12,"Reliable employee, handles pressure well."
+321,acme,David Taylor,Finance,117000,1.8,2021-03-06,Technical skills above average; working on soft skills.
+322,beta,Kenneth Flores,Marketing,111000,3.1,2020-08-20,"Quick learner, adapting well to new systems."
+323,gamma,Justin Martinez,Marketing,109000,1.7,2022-01-01,Collaborative team player with positive attitude.
+324,acme,Larry Williams,Finance,124000,4.3,2015-04-27,Excellent teamwork and communication skills.
+325,beta,Pamela Taylor,Engineering,174000,3.6,2023-08-08,"Strong analytical mindset, great attention to detail."
+326,gamma,Samantha Johnson,HR,101000,3.0,2022-01-12,Needs improvement in time management.
+327,acme,Kathleen Thomas,Sales,105000,4.2,2022-09-06,"Creative problem-solver, valued by the team."
+328,beta,Barbara Hall,Sales,124000,1.2,2019-12-06,"Creative problem-solver, valued by the team."
+329,gamma,Anthony Perez,HR,90000,3.4,2018-07-04,Shows initiative in cross-team projects.
+330,acme,Stephanie Rodriguez,Sales,110000,4.0,2020-10-10,Needs improvement in time management.
+331,beta,Donald Robinson,Engineering,132000,1.5,2020-01-16,Meets expectations; opportunities for growth in Q3.
+332,gamma,Michael Jackson,Marketing,76000,4.8,2024-09-09,"Strong analytical mindset, great attention to detail."
+333,acme,Christopher Lee,HR,76000,4.7,2023-02-01,"Reliable employee, handles pressure well."
+334,beta,Christopher Young,Marketing,120000,5.0,2020-03-27,Proactive in taking ownership of projects.
+335,gamma,John Garcia,Sales,130000,4.8,2020-09-01,Proactive in taking ownership of projects.
+336,acme,Justin Thompson,Marketing,84000,1.2,2018-02-26,Proactive in taking ownership of projects.
+337,beta,Andrew Wright,Finance,142000,1.0,2016-03-16,"Creative problem-solver, valued by the team."
+338,gamma,Dorothy Campbell,Marketing,128000,2.5,2019-07-10,"Reliable employee, handles pressure well."
+339,acme,Michael Torres,Engineering,143000,3.2,2019-01-24,Needs improvement in time management.
+340,beta,Deborah Allen,Sales,75000,2.8,2021-03-02,Technical skills above average; working on soft skills.
+341,gamma,Thomas Miller,Finance,96000,2.6,2023-11-30,"Reliable employee, handles pressure well."
+342,acme,Charles Gonzalez,Finance,128000,3.4,2019-07-03,Needs improvement in time management.
+343,beta,Robert Rodriguez,Engineering,96000,3.9,2024-01-07,Proactive in taking ownership of projects.
+344,gamma,Karen Hill,Finance,140000,4.6,2016-07-26,"Reliable employee, handles pressure well."
+345,acme,Christopher Sanchez,Finance,122000,5.0,2023-04-17,Shows initiative in cross-team projects.
+346,beta,Nicholas Allen,Sales,109000,3.1,2022-12-12,"Strong analytical mindset, great attention to detail."
+347,gamma,John White,Sales,127000,2.3,2016-03-24,"Creative problem-solver, valued by the team."
+348,acme,Patrick Hall,Finance,120000,3.5,2021-09-10,Proactive in taking ownership of projects.
+349,beta,Patrick Brown,Sales,95000,3.3,2016-11-29,Needs improvement in time management.
+350,gamma,Charles Baker,Finance,130000,2.0,2021-06-03,Collaborative team player with positive attitude.
+351,acme,John Lewis,Engineering,115000,2.3,2016-09-12,"Creative problem-solver, valued by the team."
+352,beta,Nicholas Roberts,Marketing,97000,3.4,2020-04-15,Shows initiative in cross-team projects.
+353,gamma,Eric Wilson,Engineering,108000,3.2,2022-06-05,Proactive in taking ownership of projects.
+354,acme,Joshua Lopez,Finance,129000,2.8,2020-12-23,"Reliable employee, handles pressure well."
+355,beta,Gregory Roberts,Finance,126000,4.5,2022-08-20,"Quick learner, adapting well to new systems."
+356,gamma,Matthew Thomas,Sales,128000,2.1,2018-05-07,Meets expectations; opportunities for growth in Q3.
+357,acme,Alexander Wilson,Sales,103000,3.8,2020-06-25,"Reliable employee, handles pressure well."
+358,beta,Brenda Campbell,HR,83000,2.1,2016-05-14,"Strong analytical mindset, great attention to detail."
+359,gamma,Ronald Thompson,Finance,130000,4.8,2024-01-09,High performer with leadership potential.
+360,acme,Andrew Rivera,Sales,71000,1.3,2019-12-17,"Quick learner, adapting well to new systems."
+361,beta,Margaret Gonzalez,Sales,128000,4.3,2018-01-15,Strong candidate for senior role in next cycle.
+362,gamma,Sarah Miller,Finance,116000,3.5,2021-07-31,Meets expectations; opportunities for growth in Q3.
+363,acme,Christine King,Marketing,73000,1.9,2017-08-11,"Strong contributor, consistently meets deadlines."
+364,beta,Kevin Rivera,Engineering,144000,2.9,2022-08-22,Consistently delivers quality work on schedule.
+365,gamma,Stephen Hernandez,Marketing,70000,2.6,2024-11-16,Strong candidate for senior role in next cycle.
+366,acme,Katherine Gonzalez,HR,91000,4.0,2018-03-22,"Reliable employee, handles pressure well."
+367,beta,Elizabeth Adams,Sales,73000,3.3,2020-12-31,Collaborative team player with positive attitude.
+368,gamma,Rebecca Lopez,Engineering,113000,4.7,2015-05-29,Shows initiative in cross-team projects.
+369,acme,Nancy Mitchell,HR,92000,4.8,2018-03-31,Strong candidate for senior role in next cycle.
+370,beta,Kenneth Torres,Engineering,91000,3.4,2018-10-04,Technical skills above average; working on soft skills.
+371,gamma,Anna King,HR,102000,3.0,2016-07-03,Shows initiative in cross-team projects.
+372,acme,Paul Gonzalez,Finance,141000,4.2,2018-09-16,High performer with leadership potential.
+373,beta,Steven Rivera,HR,102000,1.7,2023-04-06,"Reliable employee, handles pressure well."
+374,gamma,Gregory Carter,Sales,139000,1.8,2021-11-07,Shows initiative in cross-team projects.
+375,acme,Angela Lee,HR,88000,1.3,2022-07-04,Excellent teamwork and communication skills.
+376,beta,Kathleen Lee,Marketing,79000,4.7,2015-01-28,Technical skills above average; working on soft skills.
+377,gamma,Laura Carter,HR,75000,2.1,2018-09-12,Technical skills above average; working on soft skills.
+378,acme,Dorothy Adams,Finance,81000,2.4,2017-08-25,"Strong contributor, consistently meets deadlines."
+379,beta,Donna Hernandez,Engineering,151000,2.6,2020-08-20,Strong candidate for senior role in next cycle.
+380,gamma,Samantha Jackson,Sales,80000,2.5,2017-06-23,Meets expectations; opportunities for growth in Q3.
+381,acme,Karen Robinson,Marketing,101000,4.0,2021-10-17,"Reliable employee, handles pressure well."
+382,beta,Stephen Walker,HR,106000,4.0,2023-12-29,"Quick learner, adapting well to new systems."
+383,gamma,Ashley Baker,Marketing,120000,4.0,2024-10-16,Consistently delivers quality work on schedule.
+384,acme,Laura King,Engineering,159000,3.8,2015-11-16,Strong candidate for senior role in next cycle.
+385,beta,Linda Scott,Finance,95000,4.6,2017-04-08,"Strong analytical mindset, great attention to detail."
+386,gamma,Lisa Lee,Finance,100000,4.4,2019-12-15,Excellent teamwork and communication skills.
+387,acme,Justin Young,Marketing,117000,1.4,2020-09-21,Proactive in taking ownership of projects.
+388,beta,Thomas Allen,Engineering,149000,2.7,2021-04-28,"Strong contributor, consistently meets deadlines."
+389,gamma,Gregory Martin,Finance,141000,3.9,2019-06-10,Technical skills above average; working on soft skills.
+390,acme,Justin Jones,Engineering,119000,1.2,2018-11-12,Collaborative team player with positive attitude.
+391,beta,Linda Jones,Engineering,161000,4.9,2020-04-17,"Strong contributor, consistently meets deadlines."
+392,gamma,Nancy Roberts,Sales,119000,1.5,2022-03-12,Collaborative team player with positive attitude.
+393,acme,Timothy Lewis,HR,85000,4.5,2019-03-27,"Creative problem-solver, valued by the team."
+394,beta,Raymond Wright,Engineering,179000,1.5,2024-08-24,"Reliable employee, handles pressure well."
+395,gamma,Jonathan Sanchez,Engineering,113000,3.1,2023-03-01,Meets expectations; opportunities for growth in Q3.
+396,acme,Kenneth Robinson,Engineering,93000,3.7,2021-02-08,"Creative problem-solver, valued by the team."
+397,beta,Sandra Thomas,Finance,130000,2.8,2016-09-27,Technical skills above average; working on soft skills.
+398,gamma,Patrick Carter,Marketing,127000,1.5,2024-01-29,"Quick learner, adapting well to new systems."
+399,acme,John Thomas,HR,100000,1.8,2016-02-18,"Strong analytical mindset, great attention to detail."
+400,beta,Scott Baker,Engineering,149000,3.8,2015-07-19,Meets expectations; opportunities for growth in Q3.
+401,gamma,Jeffrey Anderson,Engineering,143000,3.2,2023-06-17,Shows initiative in cross-team projects.
+402,acme,Nicholas Jackson,Engineering,108000,1.9,2023-03-16,"Strong analytical mindset, great attention to detail."
+403,beta,Donald Martin,Sales,107000,4.5,2022-05-28,Needs improvement in time management.
+404,gamma,Kenneth Moore,Marketing,97000,1.2,2021-08-20,Strong candidate for senior role in next cycle.
+405,acme,Gregory Ramirez,Marketing,111000,3.2,2015-07-12,"Reliable employee, handles pressure well."
+406,beta,Joshua Hall,HR,94000,2.7,2016-09-03,Technical skills above average; working on soft skills.
+407,gamma,Jonathan Walker,HR,72000,2.0,2017-07-12,Technical skills above average; working on soft skills.
+408,acme,Cynthia Brown,Marketing,123000,3.2,2019-09-03,Needs improvement in time management.
+409,beta,Deborah Thomas,Finance,98000,2.0,2018-09-14,"Quick learner, adapting well to new systems."
+410,gamma,Melissa Garcia,Engineering,149000,3.1,2024-04-20,Meets expectations; opportunities for growth in Q3.
+411,acme,Timothy Baker,Engineering,125000,3.4,2015-06-11,Shows initiative in cross-team projects.
+412,beta,Emma Campbell,Engineering,115000,3.7,2017-06-07,Proactive in taking ownership of projects.
+413,gamma,Kevin Martin,Marketing,127000,4.8,2015-03-04,Meets expectations; opportunities for growth in Q3.
+414,acme,Jessica Mitchell,Marketing,119000,5.0,2020-05-15,Strong candidate for senior role in next cycle.
+415,beta,Nicole Rivera,Marketing,116000,1.8,2017-09-07,Needs improvement in time management.
+416,gamma,Timothy Robinson,Sales,102000,3.1,2019-01-11,Technical skills above average; working on soft skills.
+417,acme,Angela Young,Sales,112000,2.9,2024-01-02,Collaborative team player with positive attitude.
+418,beta,Joshua Wilson,HR,110000,2.5,2019-08-23,"Strong contributor, consistently meets deadlines."
+419,gamma,Charles Johnson,Finance,109000,2.0,2021-07-20,"Strong analytical mindset, great attention to detail."
+420,acme,Karen Gonzalez,HR,79000,2.3,2019-04-05,"Strong analytical mindset, great attention to detail."
+421,beta,Stephen Adams,Marketing,103000,4.8,2018-10-14,Technical skills above average; working on soft skills.
+422,gamma,Samuel Mitchell,HR,107000,3.0,2016-11-20,Collaborative team player with positive attitude.
+423,acme,Sarah Campbell,Sales,87000,3.2,2017-01-23,Strong candidate for senior role in next cycle.
+424,beta,Shirley Williams,Finance,88000,4.4,2015-11-01,Shows initiative in cross-team projects.
+425,gamma,Edward Rodriguez,Engineering,91000,4.4,2017-08-05,Excellent teamwork and communication skills.
+426,acme,Margaret Allen,Marketing,71000,2.8,2015-09-05,"Strong analytical mindset, great attention to detail."
+427,beta,Raymond Young,Finance,143000,1.1,2020-12-19,Needs improvement in time management.
+428,gamma,John King,HR,61000,3.9,2021-01-03,Technical skills above average; working on soft skills.
+429,acme,Rachel Baker,Engineering,156000,2.7,2017-01-04,Excellent teamwork and communication skills.
+430,beta,Karen Thomas,Engineering,159000,1.8,2020-11-26,Technical skills above average; working on soft skills.
+431,gamma,Ronald Garcia,Sales,100000,2.5,2019-07-22,Proactive in taking ownership of projects.
+432,acme,Rachel Anderson,Finance,112000,2.2,2024-04-14,Shows initiative in cross-team projects.
+433,beta,Katherine Carter,Engineering,176000,1.1,2019-07-19,"Creative problem-solver, valued by the team."
+434,gamma,Jacob Brown,HR,96000,3.5,2022-11-18,High performer with leadership potential.
+435,acme,Sharon Adams,Engineering,156000,4.1,2021-05-06,Shows initiative in cross-team projects.
+436,beta,Jennifer Anderson,Engineering,159000,1.8,2024-09-25,Collaborative team player with positive attitude.
+437,gamma,Paul Williams,Finance,142000,4.7,2022-09-04,Strong candidate for senior role in next cycle.
+438,acme,Larry Nelson,Sales,136000,1.1,2024-07-15,"Reliable employee, handles pressure well."
+439,beta,Emma Martinez,Engineering,117000,4.0,2022-12-29,Shows initiative in cross-team projects.
+440,gamma,Kenneth Hernandez,HR,65000,3.3,2021-05-10,Shows initiative in cross-team projects.
+441,acme,Anna Perez,HR,104000,2.5,2023-04-18,High performer with leadership potential.
+442,beta,Brian Brown,Engineering,156000,1.4,2017-08-08,Shows initiative in cross-team projects.
+443,gamma,Nicole Roberts,Engineering,135000,3.5,2021-09-05,"Creative problem-solver, valued by the team."
+444,acme,Samantha Moore,Sales,69000,4.1,2020-01-20,Proactive in taking ownership of projects.
+445,beta,Stephen Harris,Marketing,93000,2.7,2022-08-16,"Strong analytical mindset, great attention to detail."
+446,gamma,Helen Jackson,HR,66000,4.2,2022-12-30,Excellent teamwork and communication skills.
+447,acme,Karen Harris,Engineering,125000,3.8,2022-02-09,High performer with leadership potential.
+448,beta,George Miller,HR,81000,1.4,2018-06-16,Proactive in taking ownership of projects.
+449,gamma,Susan Rodriguez,Sales,100000,1.3,2019-11-01,Proactive in taking ownership of projects.
+450,acme,Edward Miller,Finance,147000,1.1,2018-12-20,Needs improvement in time management.
+451,beta,Scott Lee,Engineering,168000,4.5,2015-02-20,Technical skills above average; working on soft skills.
+452,gamma,David Campbell,HR,85000,4.6,2017-09-21,"Strong analytical mindset, great attention to detail."
+453,acme,Debra Harris,Finance,102000,1.7,2018-01-06,Technical skills above average; working on soft skills.
+454,beta,Charles Jones,Sales,130000,1.7,2018-02-04,"Creative problem-solver, valued by the team."
+455,gamma,Barbara White,Sales,128000,2.0,2017-10-07,Collaborative team player with positive attitude.
+456,acme,Brandon Gonzalez,HR,99000,2.8,2016-07-08,Technical skills above average; working on soft skills.
+457,beta,Kevin Flores,Engineering,142000,2.5,2024-09-01,"Reliable employee, handles pressure well."
+458,gamma,Sharon Adams,HR,82000,4.9,2016-07-11,Technical skills above average; working on soft skills.
+459,acme,Kathleen Lee,Sales,91000,1.7,2019-06-20,"Reliable employee, handles pressure well."
+460,beta,Pamela Thomas,Sales,129000,2.3,2018-02-22,Shows initiative in cross-team projects.
+461,gamma,Joseph Torres,HR,84000,1.8,2021-02-12,High performer with leadership potential.
+462,acme,Janet Robinson,Finance,84000,4.8,2017-05-08,Proactive in taking ownership of projects.
+463,beta,Edward Baker,Sales,74000,3.0,2022-02-07,Technical skills above average; working on soft skills.
+464,gamma,Raymond Martinez,Marketing,87000,3.9,2023-11-07,"Creative problem-solver, valued by the team."
+465,acme,Scott Walker,Engineering,149000,3.3,2020-12-28,Needs improvement in time management.
+466,beta,Robert White,HR,96000,3.8,2024-02-10,Needs improvement in time management.
+467,gamma,Susan Roberts,Finance,91000,2.0,2022-06-15,"Reliable employee, handles pressure well."
+468,acme,Brandon Williams,Marketing,112000,3.3,2022-03-27,"Quick learner, adapting well to new systems."
+469,beta,Kevin Ramirez,HR,109000,1.4,2016-02-08,Technical skills above average; working on soft skills.
+470,gamma,Eric Scott,Marketing,103000,3.3,2021-06-14,Meets expectations; opportunities for growth in Q3.
+471,acme,Ronald Robinson,HR,85000,4.1,2021-08-07,Collaborative team player with positive attitude.
+472,beta,Brian Johnson,Finance,100000,2.9,2018-04-25,"Creative problem-solver, valued by the team."
+473,gamma,Janet Martinez,Engineering,105000,2.4,2018-11-06,Proactive in taking ownership of projects.
+474,acme,Kathleen Thompson,Marketing,104000,2.9,2019-11-30,Collaborative team player with positive attitude.
+475,beta,William Martin,HR,81000,1.2,2022-12-21,Excellent teamwork and communication skills.
+476,gamma,Samuel Miller,Engineering,135000,3.7,2016-11-04,Strong candidate for senior role in next cycle.
+477,acme,Daniel Scott,Marketing,104000,1.6,2021-04-12,"Creative problem-solver, valued by the team."
+478,beta,Stephanie Green,HR,75000,1.7,2022-03-08,"Quick learner, adapting well to new systems."
+479,gamma,Patricia Mitchell,HR,86000,3.5,2017-03-19,Proactive in taking ownership of projects.
+480,acme,Deborah Smith,Finance,136000,3.8,2017-04-22,Technical skills above average; working on soft skills.
+481,beta,Susan Wright,Engineering,166000,1.7,2018-08-28,Meets expectations; opportunities for growth in Q3.
+482,gamma,Dorothy Nelson,HR,67000,4.5,2020-12-01,"Quick learner, adapting well to new systems."
+483,acme,Brandon Sanchez,Sales,116000,3.3,2018-11-26,"Reliable employee, handles pressure well."
+484,beta,Daniel Baker,HR,100000,3.8,2018-05-03,Strong candidate for senior role in next cycle.
+485,gamma,Gregory Rodriguez,Finance,91000,2.3,2017-09-04,Technical skills above average; working on soft skills.
+486,acme,Melissa Hall,Engineering,114000,1.6,2019-05-11,"Creative problem-solver, valued by the team."
+487,beta,Pamela Harris,Finance,98000,2.7,2020-06-16,"Quick learner, adapting well to new systems."
+488,gamma,Brenda Hernandez,Finance,103000,3.0,2016-07-28,High performer with leadership potential.
+489,acme,Helen Brown,Sales,124000,4.5,2015-02-09,Proactive in taking ownership of projects.
+490,beta,Deborah Scott,Marketing,83000,3.0,2020-07-20,"Creative problem-solver, valued by the team."
+491,gamma,Alexander Lewis,HR,87000,3.0,2015-12-05,"Strong analytical mindset, great attention to detail."
+492,acme,Emily Williams,Engineering,119000,2.1,2021-01-11,Technical skills above average; working on soft skills.
+493,beta,Ryan Torres,Marketing,121000,4.0,2023-08-04,Proactive in taking ownership of projects.
+494,gamma,Joseph Torres,Finance,147000,1.5,2023-09-10,Needs improvement in time management.
+495,acme,Jennifer Carter,Sales,136000,3.9,2021-02-15,Meets expectations; opportunities for growth in Q3.
+496,beta,Katherine Carter,HR,67000,2.0,2024-10-23,"Strong contributor, consistently meets deadlines."
+497,gamma,Brian Garcia,HR,77000,2.8,2016-04-25,Consistently delivers quality work on schedule.
+498,acme,Emma Hall,Marketing,84000,2.4,2022-12-21,"Strong analytical mindset, great attention to detail."
+499,beta,Brandon Rodriguez,HR,71000,4.1,2024-02-15,Meets expectations; opportunities for growth in Q3.
+500,gamma,Brian Wright,Engineering,165000,2.1,2021-01-15,High performer with leadership potential.
+501,acme,Emily Torres,Sales,103000,2.1,2024-08-15,Needs improvement in time management.
+502,beta,Edward Brown,Engineering,108000,5.0,2024-09-21,"Quick learner, adapting well to new systems."
+503,gamma,Thomas Thomas,Marketing,116000,1.6,2018-08-12,Shows initiative in cross-team projects.
+504,acme,Gregory Sanchez,Marketing,120000,3.0,2021-06-23,"Quick learner, adapting well to new systems."
+505,beta,Timothy Lewis,Sales,119000,1.3,2023-11-29,Strong candidate for senior role in next cycle.
+506,gamma,Angela Mitchell,Engineering,143000,2.1,2024-11-02,"Reliable employee, handles pressure well."
+507,acme,Michelle Nguyen,HR,92000,1.0,2023-09-06,Shows initiative in cross-team projects.
+508,beta,Samantha Nelson,Engineering,150000,3.8,2024-07-14,Excellent teamwork and communication skills.
+509,gamma,Margaret Ramirez,Finance,132000,4.3,2020-07-19,Technical skills above average; working on soft skills.
+510,acme,Carol Scott,Sales,102000,3.3,2021-05-07,Shows initiative in cross-team projects.
+511,beta,Debra Carter,HR,83000,1.2,2016-02-12,"Quick learner, adapting well to new systems."
+512,gamma,Jessica Hernandez,HR,61000,2.8,2015-01-03,"Creative problem-solver, valued by the team."
+513,acme,Thomas Adams,Marketing,115000,2.2,2024-10-21,Strong candidate for senior role in next cycle.
+514,beta,Katherine White,Sales,77000,2.0,2019-03-04,"Quick learner, adapting well to new systems."
+515,gamma,Ronald Green,Marketing,73000,2.2,2022-11-04,Consistently delivers quality work on schedule.
+516,acme,Katherine Garcia,Marketing,98000,3.8,2015-01-05,Meets expectations; opportunities for growth in Q3.
+517,beta,Thomas Nguyen,HR,65000,1.9,2022-08-17,Proactive in taking ownership of projects.
+518,gamma,Rachel Perez,Engineering,91000,4.3,2024-08-24,"Creative problem-solver, valued by the team."
+519,acme,Barbara Anderson,Marketing,101000,2.5,2023-03-13,Consistently delivers quality work on schedule.
+520,beta,Joshua White,Engineering,104000,4.5,2016-07-15,"Creative problem-solver, valued by the team."
+521,gamma,Gregory Martinez,Marketing,112000,1.3,2021-04-26,"Strong contributor, consistently meets deadlines."
+522,acme,Jeffrey Thompson,Finance,102000,3.9,2022-01-16,Collaborative team player with positive attitude.
+523,beta,Brandon Baker,Marketing,97000,2.8,2017-06-08,Excellent teamwork and communication skills.
+524,gamma,Jessica Nguyen,Engineering,108000,3.9,2018-12-10,"Creative problem-solver, valued by the team."
+525,acme,Ashley Moore,Sales,83000,3.6,2017-10-13,Needs improvement in time management.
+526,beta,Frank Johnson,Finance,117000,4.4,2022-05-20,Strong candidate for senior role in next cycle.
+527,gamma,Eric Hill,Sales,92000,3.0,2023-05-22,"Creative problem-solver, valued by the team."
+528,acme,Donald Young,Sales,72000,2.5,2017-09-14,Proactive in taking ownership of projects.
+529,beta,Shirley Smith,Finance,89000,4.9,2018-07-20,High performer with leadership potential.
+530,gamma,Rebecca White,HR,97000,3.2,2016-12-08,Consistently delivers quality work on schedule.
+531,acme,John Nguyen,HR,65000,1.3,2017-12-09,Meets expectations; opportunities for growth in Q3.
+532,beta,Ronald Allen,Engineering,98000,2.1,2022-12-28,Needs improvement in time management.
+533,gamma,Rachel Sanchez,HR,88000,1.3,2021-01-06,Needs improvement in time management.
+534,acme,Kimberly Garcia,Finance,100000,2.2,2020-09-25,Strong candidate for senior role in next cycle.
+535,beta,Karen Wright,Marketing,123000,2.3,2021-07-30,"Quick learner, adapting well to new systems."
+536,gamma,Rachel Ramirez,Engineering,131000,3.9,2024-06-29,Meets expectations; opportunities for growth in Q3.
+537,acme,Elizabeth Ramirez,Engineering,122000,1.5,2021-11-12,"Strong analytical mindset, great attention to detail."
+538,beta,Christine Mitchell,Engineering,131000,3.6,2016-12-20,Excellent teamwork and communication skills.
+539,gamma,Rachel Smith,Engineering,108000,1.7,2018-11-21,Needs improvement in time management.
+540,acme,Lisa White,Finance,114000,1.5,2023-10-05,Shows initiative in cross-team projects.
+541,beta,Patricia Perez,Sales,80000,4.2,2018-01-19,Needs improvement in time management.
+542,gamma,Carolyn Torres,Engineering,124000,3.5,2020-07-25,Proactive in taking ownership of projects.
+543,acme,Linda Young,Finance,127000,4.4,2016-11-14,"Reliable employee, handles pressure well."
+544,beta,Susan Torres,Marketing,87000,3.7,2016-04-17,Meets expectations; opportunities for growth in Q3.
+545,gamma,Jennifer Smith,Finance,80000,2.0,2020-04-16,"Reliable employee, handles pressure well."
+546,acme,Daniel Williams,HR,70000,3.2,2023-01-03,Collaborative team player with positive attitude.
+547,beta,Michelle Thomas,HR,75000,2.7,2023-01-29,"Reliable employee, handles pressure well."
+548,gamma,Pamela White,Sales,75000,1.5,2022-07-20,Strong candidate for senior role in next cycle.
+549,acme,Mark King,Engineering,114000,4.9,2019-07-01,Excellent teamwork and communication skills.
+550,beta,Donna Lee,HR,79000,1.3,2020-02-14,"Strong contributor, consistently meets deadlines."
+551,gamma,Emily Torres,Sales,91000,4.1,2023-04-18,"Strong analytical mindset, great attention to detail."
+552,acme,Melissa Nguyen,Marketing,100000,4.9,2023-08-31,Consistently delivers quality work on schedule.
+553,beta,Anna Carter,Marketing,118000,4.2,2016-09-08,"Strong contributor, consistently meets deadlines."
+554,gamma,Sandra Wright,HR,62000,2.4,2024-05-31,Collaborative team player with positive attitude.
+555,acme,James Carter,Engineering,134000,3.6,2024-07-09,Collaborative team player with positive attitude.
+556,beta,Anthony King,Sales,79000,4.9,2019-09-16,Proactive in taking ownership of projects.
+557,gamma,Carolyn Moore,Engineering,109000,1.4,2017-08-06,Strong candidate for senior role in next cycle.
+558,acme,Rachel White,Finance,134000,2.8,2023-05-22,Excellent teamwork and communication skills.
+559,beta,Nicholas Rodriguez,Finance,93000,3.5,2019-06-04,Excellent teamwork and communication skills.
+560,gamma,Sharon Nelson,Finance,88000,4.9,2017-08-27,Technical skills above average; working on soft skills.
+561,acme,Ronald Hall,Sales,106000,4.3,2018-08-29,"Reliable employee, handles pressure well."
+562,beta,Sandra Jones,HR,78000,4.8,2016-07-11,Consistently delivers quality work on schedule.
+563,gamma,Karen Miller,Finance,94000,1.7,2020-03-23,"Reliable employee, handles pressure well."
+564,acme,Jonathan Thompson,HR,68000,4.9,2017-04-30,Proactive in taking ownership of projects.
+565,beta,Dorothy Davis,Sales,126000,1.4,2024-01-21,"Quick learner, adapting well to new systems."
+566,gamma,Margaret Lee,Sales,70000,1.6,2022-12-22,Meets expectations; opportunities for growth in Q3.
+567,acme,Angela Brown,Sales,117000,3.7,2017-12-01,Shows initiative in cross-team projects.
+568,beta,Stephanie Lewis,Marketing,72000,3.2,2021-03-03,Meets expectations; opportunities for growth in Q3.
+569,gamma,Susan Rodriguez,Engineering,151000,1.5,2015-09-10,Shows initiative in cross-team projects.
+570,acme,Betty Sanchez,Marketing,79000,2.5,2022-01-25,"Quick learner, adapting well to new systems."
+571,beta,Emma Taylor,Engineering,166000,4.7,2015-11-04,"Strong contributor, consistently meets deadlines."
+572,gamma,Samuel Lewis,Engineering,116000,4.2,2016-01-12,Strong candidate for senior role in next cycle.
+573,acme,Jennifer Robinson,Sales,81000,1.2,2021-06-08,"Creative problem-solver, valued by the team."
+574,beta,Patricia Harris,HR,93000,3.7,2016-12-08,"Reliable employee, handles pressure well."
+575,gamma,Nancy Moore,Marketing,130000,2.1,2024-11-27,High performer with leadership potential.
+576,acme,Helen Flores,Engineering,170000,2.0,2018-04-23,Proactive in taking ownership of projects.
+577,beta,Kathleen Brown,HR,96000,1.4,2019-04-18,High performer with leadership potential.
+578,gamma,Samuel King,HR,73000,2.0,2023-12-30,Needs improvement in time management.
+579,acme,Carolyn Thompson,Engineering,140000,2.9,2023-10-06,Proactive in taking ownership of projects.
+580,beta,Nicholas Lee,Sales,139000,2.6,2017-01-06,"Strong contributor, consistently meets deadlines."
+581,gamma,Patricia Roberts,Sales,94000,2.1,2024-01-26,Proactive in taking ownership of projects.
+582,acme,Justin Anderson,Finance,127000,4.9,2016-02-15,Meets expectations; opportunities for growth in Q3.
+583,beta,Jonathan Mitchell,Marketing,87000,1.2,2017-06-17,"Strong analytical mindset, great attention to detail."
+584,gamma,Daniel Lopez,HR,83000,1.9,2018-07-26,Consistently delivers quality work on schedule.
+585,acme,Alexander Hall,Sales,69000,2.4,2021-05-14,"Strong analytical mindset, great attention to detail."
+586,beta,Matthew Young,Marketing,107000,3.2,2016-12-20,Proactive in taking ownership of projects.
+587,gamma,Linda Anderson,Engineering,102000,3.4,2015-03-23,Needs improvement in time management.
+588,acme,Kevin Flores,HR,60000,1.8,2016-06-18,"Reliable employee, handles pressure well."
+589,beta,Michelle Brown,Marketing,123000,1.1,2021-07-30,Collaborative team player with positive attitude.
+590,gamma,Joseph King,Marketing,121000,4.4,2015-10-25,"Reliable employee, handles pressure well."
+591,acme,Richard Perez,HR,98000,2.2,2016-07-12,High performer with leadership potential.
+592,beta,Gary Adams,HR,102000,2.3,2022-12-06,Needs improvement in time management.
+593,gamma,Mark Nelson,Finance,127000,3.4,2016-12-19,"Creative problem-solver, valued by the team."
+594,acme,Thomas Lopez,Sales,104000,3.9,2022-11-15,"Strong analytical mindset, great attention to detail."
+595,beta,Robert Lopez,HR,97000,3.4,2024-01-26,"Strong analytical mindset, great attention to detail."
+596,gamma,Larry Miller,Marketing,112000,4.7,2016-07-30,"Reliable employee, handles pressure well."
+597,acme,Brian Lee,Engineering,121000,1.7,2024-12-05,Excellent teamwork and communication skills.
+598,beta,Mary Taylor,Sales,124000,1.8,2022-10-10,Excellent teamwork and communication skills.
+599,gamma,Susan Campbell,Sales,99000,1.0,2019-04-30,Proactive in taking ownership of projects.
+600,acme,Edward Young,HR,71000,4.5,2018-12-09,Needs improvement in time management.
+601,beta,Kathleen Torres,HR,67000,3.6,2022-09-15,Meets expectations; opportunities for growth in Q3.
+602,gamma,Barbara Williams,Marketing,100000,2.2,2018-07-29,Technical skills above average; working on soft skills.
+603,acme,Carol Hernandez,Engineering,100000,4.6,2016-10-21,Collaborative team player with positive attitude.
+604,beta,Elizabeth Perez,Engineering,162000,3.4,2021-11-18,Strong candidate for senior role in next cycle.
+605,gamma,Patricia Ramirez,HR,106000,4.8,2016-11-06,"Strong analytical mindset, great attention to detail."
+606,acme,Michael Miller,HR,70000,2.3,2017-02-17,"Creative problem-solver, valued by the team."
+607,beta,Raymond Jackson,Finance,115000,2.2,2016-01-28,"Strong contributor, consistently meets deadlines."
+608,gamma,Stephen Young,HR,97000,1.6,2019-01-17,"Strong contributor, consistently meets deadlines."
+609,acme,Emily Nelson,HR,66000,3.5,2020-05-21,Meets expectations; opportunities for growth in Q3.
+610,beta,Anthony Hernandez,Engineering,93000,3.6,2015-12-02,Proactive in taking ownership of projects.
+611,gamma,Ronald Walker,Engineering,130000,3.0,2022-05-31,Technical skills above average; working on soft skills.
+612,acme,Anna Harris,Engineering,174000,1.7,2024-12-05,"Creative problem-solver, valued by the team."
+613,beta,Laura Williams,Sales,89000,2.1,2020-03-19,Technical skills above average; working on soft skills.
+614,gamma,Paul Torres,Marketing,125000,1.2,2023-06-09,Collaborative team player with positive attitude.
+615,acme,Christine Thompson,Engineering,101000,4.2,2019-08-23,Consistently delivers quality work on schedule.
+616,beta,Stephen Brown,Finance,110000,4.4,2024-03-06,Needs improvement in time management.
+617,gamma,Debra Walker,HR,95000,3.3,2017-08-23,Proactive in taking ownership of projects.
+618,acme,Ronald Rivera,Sales,75000,1.1,2021-05-28,Strong candidate for senior role in next cycle.
+619,beta,Jessica Carter,Finance,99000,2.8,2016-11-15,Meets expectations; opportunities for growth in Q3.
+620,gamma,Jennifer Ramirez,Marketing,78000,1.3,2022-08-30,"Creative problem-solver, valued by the team."
+621,acme,Benjamin Martinez,Marketing,124000,4.3,2017-11-22,"Reliable employee, handles pressure well."
+622,beta,Deborah Scott,Engineering,101000,2.6,2018-08-28,Shows initiative in cross-team projects.
+623,gamma,Ryan Smith,Sales,133000,4.1,2021-12-27,"Strong analytical mindset, great attention to detail."
+624,acme,Joseph Clark,Finance,135000,1.6,2021-05-09,"Strong analytical mindset, great attention to detail."
+625,beta,Susan Torres,Finance,93000,4.1,2023-10-24,Technical skills above average; working on soft skills.
+626,gamma,Edward Taylor,Finance,125000,2.5,2020-06-11,"Strong analytical mindset, great attention to detail."
+627,acme,Robert Lopez,Finance,142000,2.1,2016-08-12,"Strong analytical mindset, great attention to detail."
+628,beta,Robert Sanchez,Finance,133000,4.6,2018-09-19,Collaborative team player with positive attitude.
+629,gamma,Jacob Moore,Marketing,73000,4.6,2015-03-24,"Reliable employee, handles pressure well."
+630,acme,Kimberly Young,Sales,106000,4.4,2022-09-06,Excellent teamwork and communication skills.
+631,beta,Kenneth Mitchell,Marketing,79000,2.8,2024-04-05,"Reliable employee, handles pressure well."
+632,gamma,Nicole Adams,Sales,120000,1.4,2019-12-15,Meets expectations; opportunities for growth in Q3.
+633,acme,Gary Carter,HR,109000,3.1,2019-03-12,Shows initiative in cross-team projects.
+634,beta,Christopher Jones,Engineering,158000,2.2,2020-09-06,"Creative problem-solver, valued by the team."
+635,gamma,Shirley Torres,Marketing,121000,1.1,2017-02-28,Strong candidate for senior role in next cycle.
+636,acme,Linda Thomas,Marketing,125000,1.1,2015-07-27,Strong candidate for senior role in next cycle.
+637,beta,Kimberly White,Sales,91000,4.3,2020-08-30,"Creative problem-solver, valued by the team."
+638,gamma,Patricia Thomas,Engineering,179000,2.5,2021-08-30,Proactive in taking ownership of projects.
+639,acme,Jacob Nguyen,Marketing,127000,3.2,2018-11-11,High performer with leadership potential.
+640,beta,Andrew Johnson,Sales,77000,2.5,2016-10-29,Shows initiative in cross-team projects.
+641,gamma,Mark Adams,Finance,108000,1.9,2017-04-26,Technical skills above average; working on soft skills.
+642,acme,John Roberts,HR,94000,4.9,2022-08-26,"Strong contributor, consistently meets deadlines."
+643,beta,Samuel Lopez,HR,69000,3.4,2015-02-04,Meets expectations; opportunities for growth in Q3.
+644,gamma,Carolyn Rivera,Sales,105000,3.6,2019-10-02,Strong candidate for senior role in next cycle.
+645,acme,Ryan Taylor,HR,83000,1.9,2018-05-22,"Quick learner, adapting well to new systems."
+646,beta,Justin Miller,Finance,132000,1.0,2022-06-06,Shows initiative in cross-team projects.
+647,gamma,Samuel Hill,Sales,139000,3.4,2018-05-07,"Quick learner, adapting well to new systems."
+648,acme,William Perez,Engineering,153000,5.0,2022-03-08,"Reliable employee, handles pressure well."
+649,beta,Katherine Rivera,Sales,99000,4.8,2022-04-22,Technical skills above average; working on soft skills.
+650,gamma,Eric Carter,Marketing,80000,2.0,2015-08-21,Consistently delivers quality work on schedule.
+651,acme,Raymond Lee,Finance,133000,3.7,2023-02-02,"Strong contributor, consistently meets deadlines."
+652,beta,Dorothy Clark,HR,79000,2.6,2023-04-06,"Strong contributor, consistently meets deadlines."
+653,gamma,Carol Campbell,Finance,105000,3.9,2022-09-12,Needs improvement in time management.
+654,acme,Amanda Allen,HR,104000,2.2,2016-11-27,Shows initiative in cross-team projects.
+655,beta,Emily Miller,Finance,104000,2.9,2023-04-23,Technical skills above average; working on soft skills.
+656,gamma,Debra Perez,Finance,104000,3.6,2017-06-29,"Reliable employee, handles pressure well."
+657,acme,Donna Clark,Marketing,119000,4.2,2018-09-19,"Reliable employee, handles pressure well."
+658,beta,Cynthia Davis,Sales,104000,2.9,2024-09-18,"Quick learner, adapting well to new systems."
+659,gamma,Jacob Gonzalez,Finance,89000,3.0,2024-09-23,"Quick learner, adapting well to new systems."
+660,acme,Kenneth Clark,HR,95000,1.2,2024-07-30,High performer with leadership potential.
+661,beta,Carol Clark,Marketing,83000,4.9,2020-02-18,High performer with leadership potential.
+662,gamma,David Young,Sales,89000,2.3,2016-12-25,"Reliable employee, handles pressure well."
+663,acme,Laura Moore,Engineering,91000,1.8,2023-09-04,High performer with leadership potential.
+664,beta,Gary Carter,Finance,101000,4.1,2016-06-14,"Strong analytical mindset, great attention to detail."
+665,gamma,Jason Sanchez,HR,102000,2.7,2020-05-09,"Creative problem-solver, valued by the team."
+666,acme,Jonathan Gonzalez,Engineering,95000,3.9,2015-02-27,Strong candidate for senior role in next cycle.
+667,beta,Matthew Johnson,Sales,135000,3.7,2022-01-10,Collaborative team player with positive attitude.
+668,gamma,Frank Thompson,Marketing,85000,2.2,2016-02-25,"Creative problem-solver, valued by the team."
+669,acme,Lisa Jones,Finance,120000,4.3,2018-05-06,Technical skills above average; working on soft skills.
+670,beta,Eric Hill,HR,108000,3.1,2019-11-12,Strong candidate for senior role in next cycle.
+671,gamma,Gary Thompson,Marketing,92000,4.0,2016-11-06,Strong candidate for senior role in next cycle.
+672,acme,Sandra Anderson,HR,61000,3.9,2016-06-21,Meets expectations; opportunities for growth in Q3.
+673,beta,Nicholas Hernandez,Engineering,167000,1.5,2022-12-22,"Quick learner, adapting well to new systems."
+674,gamma,Samantha Taylor,Engineering,139000,4.1,2021-12-27,"Strong contributor, consistently meets deadlines."
+675,acme,Raymond Miller,Finance,86000,3.6,2015-03-22,"Strong contributor, consistently meets deadlines."
+676,beta,Jeffrey Harris,Engineering,145000,1.5,2017-11-01,Proactive in taking ownership of projects.
+677,gamma,Frank Baker,Marketing,83000,3.5,2018-05-18,"Creative problem-solver, valued by the team."
+678,acme,Eric Moore,Engineering,177000,3.5,2022-11-10,High performer with leadership potential.
+679,beta,Angela Campbell,HR,67000,3.5,2018-03-03,Excellent teamwork and communication skills.
+680,gamma,Betty Hill,Engineering,155000,1.8,2017-12-13,Shows initiative in cross-team projects.
+681,acme,Amanda Rivera,Finance,106000,2.6,2016-10-18,"Strong contributor, consistently meets deadlines."
+682,beta,Anthony Hall,Finance,145000,4.7,2018-09-16,Meets expectations; opportunities for growth in Q3.
+683,gamma,Christine Garcia,Engineering,92000,4.6,2024-05-14,"Strong analytical mindset, great attention to detail."
+684,acme,Elizabeth Roberts,HR,70000,3.0,2023-02-11,Collaborative team player with positive attitude.
+685,beta,Samuel Anderson,Engineering,124000,2.8,2018-04-27,Technical skills above average; working on soft skills.
+686,gamma,Richard Lopez,HR,63000,4.5,2024-07-22,Technical skills above average; working on soft skills.
+687,acme,Jason Mitchell,Sales,106000,1.5,2024-07-18,Consistently delivers quality work on schedule.
+688,beta,Sarah Nelson,Engineering,91000,3.6,2018-09-08,"Reliable employee, handles pressure well."
+689,gamma,Paul Campbell,HR,101000,1.4,2024-02-21,"Reliable employee, handles pressure well."
+690,acme,Stephanie Sanchez,Marketing,77000,4.8,2018-01-18,Shows initiative in cross-team projects.
+691,beta,Kathleen Clark,HR,105000,3.6,2023-12-09,High performer with leadership potential.
+692,gamma,Rachel Campbell,Engineering,107000,1.2,2024-06-20,High performer with leadership potential.
+693,acme,Emma Walker,Engineering,145000,4.2,2022-08-10,Proactive in taking ownership of projects.
+694,beta,Timothy Roberts,Marketing,110000,2.4,2015-04-29,Shows initiative in cross-team projects.
+695,gamma,Gary Davis,Marketing,102000,4.6,2019-12-11,"Strong contributor, consistently meets deadlines."
+696,acme,Katherine Lee,Engineering,124000,1.0,2024-09-26,"Quick learner, adapting well to new systems."
+697,beta,Christine Perez,Finance,109000,3.1,2022-09-20,Collaborative team player with positive attitude.
+698,gamma,Sharon Nelson,Finance,92000,3.9,2020-05-27,"Reliable employee, handles pressure well."
+699,acme,Brenda Flores,HR,70000,1.2,2022-03-20,Strong candidate for senior role in next cycle.
+700,beta,Jacob Young,Marketing,103000,4.5,2015-11-03,Consistently delivers quality work on schedule.
+701,gamma,Donald Perez,HR,81000,4.9,2015-07-26,Needs improvement in time management.
+702,acme,Samuel Harris,Marketing,106000,2.6,2017-08-20,Excellent teamwork and communication skills.
+703,beta,Pamela Lewis,HR,89000,1.4,2020-08-03,Proactive in taking ownership of projects.
+704,gamma,Amy Mitchell,Sales,81000,3.6,2016-02-25,"Creative problem-solver, valued by the team."
+705,acme,Brenda Scott,HR,62000,1.0,2016-01-08,Consistently delivers quality work on schedule.
+706,beta,Angela Scott,Finance,120000,1.8,2022-07-13,Proactive in taking ownership of projects.
+707,gamma,Michael Anderson,Sales,113000,4.4,2018-09-21,Needs improvement in time management.
+708,acme,Carolyn Nelson,Finance,142000,2.5,2020-01-28,Excellent teamwork and communication skills.
+709,beta,Mark Smith,Engineering,176000,2.4,2024-04-22,"Quick learner, adapting well to new systems."
+710,gamma,Eric White,Sales,137000,3.8,2015-07-07,Strong candidate for senior role in next cycle.
+711,acme,Sarah Rivera,Marketing,102000,4.0,2019-08-04,Excellent teamwork and communication skills.
+712,beta,Matthew Davis,Sales,91000,4.7,2019-05-29,Meets expectations; opportunities for growth in Q3.
+713,gamma,Carolyn Perez,HR,72000,1.4,2019-08-25,"Strong contributor, consistently meets deadlines."
+714,acme,Laura Robinson,Finance,96000,3.6,2020-08-27,High performer with leadership potential.
+715,beta,Shirley Mitchell,HR,60000,1.2,2019-11-08,Shows initiative in cross-team projects.
+716,gamma,Angela Roberts,Finance,143000,4.7,2016-12-26,Collaborative team player with positive attitude.
+717,acme,Janet Rodriguez,Finance,103000,1.4,2022-05-17,"Strong analytical mindset, great attention to detail."
+718,beta,Nicholas Harris,Finance,122000,2.7,2021-10-30,Strong candidate for senior role in next cycle.
+719,gamma,Ronald Perez,Marketing,88000,4.9,2020-01-29,Consistently delivers quality work on schedule.
+720,acme,Edward Hill,Marketing,79000,3.8,2023-05-24,Needs improvement in time management.
+721,beta,Joshua Rivera,Sales,137000,3.9,2021-03-17,"Quick learner, adapting well to new systems."
+722,gamma,Anthony Flores,Marketing,83000,3.9,2022-09-13,"Reliable employee, handles pressure well."
+723,acme,Katherine Lopez,Marketing,117000,3.0,2022-10-14,"Quick learner, adapting well to new systems."
+724,beta,Amanda Scott,Sales,80000,2.9,2021-05-26,"Quick learner, adapting well to new systems."
+725,gamma,Jonathan Jackson,HR,104000,4.5,2019-09-27,Consistently delivers quality work on schedule.
+726,acme,Susan Johnson,Engineering,159000,2.5,2015-08-06,"Quick learner, adapting well to new systems."
+727,beta,Paul Carter,Engineering,116000,4.1,2018-03-19,"Quick learner, adapting well to new systems."
+728,gamma,Linda Hall,Sales,84000,4.1,2017-04-15,Consistently delivers quality work on schedule.
+729,acme,Amanda Lewis,Finance,84000,1.4,2024-09-25,"Quick learner, adapting well to new systems."
+730,beta,Samuel Scott,Finance,109000,2.6,2020-09-23,Consistently delivers quality work on schedule.
+731,gamma,Timothy Harris,Sales,71000,2.7,2023-11-03,"Quick learner, adapting well to new systems."
+732,acme,Michael Smith,Sales,137000,4.0,2017-04-11,"Strong analytical mindset, great attention to detail."
+733,beta,Samantha Rivera,HR,75000,3.8,2019-02-15,Consistently delivers quality work on schedule.
+734,gamma,Patrick Gonzalez,Finance,106000,2.2,2016-12-27,"Quick learner, adapting well to new systems."
+735,acme,Daniel Mitchell,Engineering,115000,3.1,2019-03-26,"Strong contributor, consistently meets deadlines."
+736,beta,Brenda Taylor,HR,78000,1.5,2021-07-20,Shows initiative in cross-team projects.
+737,gamma,Kevin Robinson,Sales,66000,3.8,2016-09-26,"Strong contributor, consistently meets deadlines."
+738,acme,Scott Brown,Marketing,91000,4.1,2022-01-05,"Strong analytical mindset, great attention to detail."
+739,beta,Pamela Scott,Sales,129000,2.4,2023-10-17,Collaborative team player with positive attitude.
+740,gamma,Mark Lopez,Sales,134000,3.1,2023-10-26,Needs improvement in time management.
+741,acme,Anna Wright,Marketing,97000,2.6,2018-12-02,Meets expectations; opportunities for growth in Q3.
+742,beta,Kevin Perez,Marketing,113000,2.4,2017-06-13,Consistently delivers quality work on schedule.
+743,gamma,Jacob Scott,Finance,150000,4.3,2022-04-13,"Strong contributor, consistently meets deadlines."
+744,acme,Brian Lewis,Engineering,178000,2.0,2022-03-15,"Strong analytical mindset, great attention to detail."
+745,beta,Jennifer Baker,Finance,112000,4.5,2019-04-12,Strong candidate for senior role in next cycle.
+746,gamma,Steven Wright,Engineering,141000,3.9,2015-04-12,Strong candidate for senior role in next cycle.
+747,acme,Angela Allen,Finance,129000,2.8,2015-06-29,Technical skills above average; working on soft skills.
+748,beta,Angela Garcia,Marketing,91000,4.8,2016-11-16,Consistently delivers quality work on schedule.
+749,gamma,James Green,Finance,150000,1.3,2022-07-08,"Quick learner, adapting well to new systems."
+750,acme,Debra Ramirez,Marketing,127000,4.3,2017-04-22,Needs improvement in time management.
+751,beta,Barbara Mitchell,HR,102000,3.7,2015-04-08,Proactive in taking ownership of projects.
+752,gamma,Elizabeth Jones,Sales,70000,1.2,2023-11-28,Technical skills above average; working on soft skills.
+753,acme,Pamela Anderson,Finance,89000,4.6,2019-07-28,"Creative problem-solver, valued by the team."
+754,beta,Stephanie Ramirez,HR,101000,2.3,2019-05-15,"Quick learner, adapting well to new systems."
+755,gamma,James Adams,Engineering,160000,3.9,2015-09-17,Consistently delivers quality work on schedule.
+756,acme,Rachel Jones,Finance,86000,2.4,2020-08-21,Excellent teamwork and communication skills.
+757,beta,Nicole Garcia,Sales,104000,2.1,2019-11-28,"Creative problem-solver, valued by the team."
+758,gamma,Patricia Walker,HR,103000,1.6,2017-06-19,High performer with leadership potential.
+759,acme,Emily Green,HR,96000,1.6,2022-08-06,Strong candidate for senior role in next cycle.
+760,beta,Stephen Scott,Sales,66000,1.6,2015-06-21,"Strong contributor, consistently meets deadlines."
+761,gamma,Jonathan Scott,Finance,132000,4.8,2018-06-02,Meets expectations; opportunities for growth in Q3.
+762,acme,Edward Adams,Sales,93000,4.4,2016-08-06,High performer with leadership potential.
+763,beta,Brandon Taylor,Marketing,84000,1.8,2017-01-12,"Quick learner, adapting well to new systems."
+764,gamma,Stephen Robinson,Finance,87000,3.6,2015-10-27,Technical skills above average; working on soft skills.
+765,acme,Richard Gonzalez,Engineering,123000,3.9,2020-06-18,"Reliable employee, handles pressure well."
+766,beta,Christine Adams,Sales,82000,1.9,2018-03-13,"Strong analytical mindset, great attention to detail."
+767,gamma,Joshua Young,Engineering,115000,2.8,2021-11-29,"Quick learner, adapting well to new systems."
+768,acme,Larry Torres,Sales,85000,2.5,2018-07-19,"Creative problem-solver, valued by the team."
+769,beta,Joshua Thomas,Marketing,70000,4.1,2022-12-27,Collaborative team player with positive attitude.
+770,gamma,George Rodriguez,HR,78000,3.7,2018-09-20,Strong candidate for senior role in next cycle.
+771,acme,Laura Thompson,HR,90000,4.1,2020-06-17,Needs improvement in time management.
+772,beta,Samuel Hill,Engineering,113000,1.3,2018-02-23,Shows initiative in cross-team projects.
+773,gamma,Jonathan Gonzalez,Marketing,128000,2.1,2024-12-09,"Quick learner, adapting well to new systems."
+774,acme,John Allen,Engineering,100000,3.5,2024-02-11,"Strong analytical mindset, great attention to detail."
+775,beta,Emma Wilson,Finance,133000,4.6,2021-03-09,Technical skills above average; working on soft skills.
+776,gamma,Katherine Roberts,Finance,142000,1.6,2019-05-27,Meets expectations; opportunities for growth in Q3.
+777,acme,Sarah Robinson,Finance,118000,3.0,2016-01-06,"Creative problem-solver, valued by the team."
+778,beta,Mary Nelson,Sales,131000,2.0,2024-01-17,"Strong analytical mindset, great attention to detail."
+779,gamma,Angela Rodriguez,Marketing,120000,2.8,2017-01-03,"Strong analytical mindset, great attention to detail."
+780,acme,Janet Walker,Finance,99000,4.8,2015-06-15,Meets expectations; opportunities for growth in Q3.
+781,beta,William Taylor,HR,75000,2.5,2015-06-25,"Quick learner, adapting well to new systems."
+782,gamma,George Harris,Marketing,104000,2.9,2020-02-06,Strong candidate for senior role in next cycle.
+783,acme,Katherine Lee,Engineering,95000,1.4,2020-11-05,"Quick learner, adapting well to new systems."
+784,beta,Justin Wright,Sales,100000,3.3,2019-03-23,"Quick learner, adapting well to new systems."
+785,gamma,Emma Adams,HR,84000,4.6,2015-11-15,Needs improvement in time management.
+786,acme,Mark King,Sales,114000,2.6,2024-03-01,Shows initiative in cross-team projects.
+787,beta,Kathleen Hill,Sales,129000,1.0,2024-11-21,High performer with leadership potential.
+788,gamma,Sandra Jones,HR,71000,3.1,2018-02-24,Meets expectations; opportunities for growth in Q3.
+789,acme,Christopher White,Marketing,82000,3.4,2024-02-29,Excellent teamwork and communication skills.
+790,beta,Kevin Campbell,Marketing,97000,1.5,2022-07-28,Proactive in taking ownership of projects.
+791,gamma,Emma Hernandez,HR,74000,3.6,2019-08-11,"Strong contributor, consistently meets deadlines."
+792,acme,Thomas Torres,Marketing,73000,3.4,2016-07-05,"Quick learner, adapting well to new systems."
+793,beta,Pamela Martinez,Finance,85000,1.2,2017-11-23,Strong candidate for senior role in next cycle.
+794,gamma,Stephanie Hill,Marketing,104000,4.9,2022-02-24,"Strong contributor, consistently meets deadlines."
+795,acme,Margaret Lewis,Sales,76000,3.4,2020-04-14,Shows initiative in cross-team projects.
+796,beta,Mark Clark,HR,71000,3.4,2023-11-29,"Strong analytical mindset, great attention to detail."
+797,gamma,Raymond Allen,Marketing,111000,2.1,2023-02-14,"Quick learner, adapting well to new systems."
+798,acme,Scott Nguyen,Sales,124000,1.3,2019-03-30,"Creative problem-solver, valued by the team."
+799,beta,John Gonzalez,Marketing,77000,3.1,2020-08-27,"Quick learner, adapting well to new systems."
+800,gamma,Nicole Miller,HR,70000,1.7,2021-11-23,"Strong analytical mindset, great attention to detail."
+801,acme,Nicholas Carter,Engineering,160000,1.5,2020-05-29,"Quick learner, adapting well to new systems."
+802,beta,Nicole Wright,Marketing,129000,4.3,2023-09-09,"Quick learner, adapting well to new systems."
+803,gamma,Rebecca White,HR,94000,4.5,2022-10-28,Needs improvement in time management.
+804,acme,Kathleen Roberts,HR,75000,2.5,2021-08-09,Consistently delivers quality work on schedule.
+805,beta,Jason Rodriguez,Finance,93000,2.0,2023-08-03,Meets expectations; opportunities for growth in Q3.
+806,gamma,Scott Wright,Engineering,127000,2.6,2017-02-13,"Strong contributor, consistently meets deadlines."
+807,acme,Eric Davis,Engineering,166000,3.1,2019-03-17,"Quick learner, adapting well to new systems."
+808,beta,Joshua Clark,Marketing,115000,2.4,2016-09-25,"Creative problem-solver, valued by the team."
+809,gamma,Dorothy Wright,Finance,113000,2.7,2019-02-06,"Strong analytical mindset, great attention to detail."
+810,acme,Anthony Clark,Sales,117000,3.2,2021-04-02,Proactive in taking ownership of projects.
+811,beta,Brenda Scott,Marketing,94000,2.9,2018-06-10,"Strong analytical mindset, great attention to detail."
+812,gamma,Sarah Nelson,Sales,117000,1.5,2017-07-30,Proactive in taking ownership of projects.
+813,acme,Margaret Allen,Marketing,77000,2.6,2018-10-18,Consistently delivers quality work on schedule.
+814,beta,Christopher Harris,Finance,87000,4.9,2015-01-22,Consistently delivers quality work on schedule.
+815,gamma,Jacob Hill,Engineering,109000,2.7,2015-09-20,Technical skills above average; working on soft skills.
+816,acme,David Hill,Marketing,94000,1.2,2019-04-24,Strong candidate for senior role in next cycle.
+817,beta,Katherine King,HR,100000,2.1,2021-09-13,"Strong contributor, consistently meets deadlines."
+818,gamma,Amy Lewis,Marketing,112000,1.0,2024-07-15,"Quick learner, adapting well to new systems."
+819,acme,Matthew Williams,Finance,117000,4.1,2020-09-22,Needs improvement in time management.
+820,beta,Lisa Baker,Marketing,110000,1.1,2017-09-06,"Quick learner, adapting well to new systems."
+821,gamma,Elizabeth Moore,Engineering,111000,4.1,2018-12-17,"Quick learner, adapting well to new systems."
+822,acme,Emma Gonzalez,HR,87000,3.1,2023-04-07,Collaborative team player with positive attitude.
+823,beta,Stephen Jackson,Engineering,102000,3.9,2021-04-09,Strong candidate for senior role in next cycle.
+824,gamma,Brian Moore,Finance,126000,1.9,2017-03-07,Proactive in taking ownership of projects.
+825,acme,James Taylor,HR,98000,1.7,2020-09-04,Excellent teamwork and communication skills.
+826,beta,Nicholas Jackson,Finance,89000,2.4,2016-04-24,Consistently delivers quality work on schedule.
+827,gamma,Jonathan Torres,Finance,114000,2.0,2019-12-19,"Creative problem-solver, valued by the team."
+828,acme,Ashley Carter,Finance,143000,2.4,2023-09-12,Proactive in taking ownership of projects.
+829,beta,Patricia Walker,HR,98000,1.5,2015-10-04,"Creative problem-solver, valued by the team."
+830,gamma,Rachel Anderson,Marketing,114000,4.2,2019-08-17,"Reliable employee, handles pressure well."
+831,acme,Rachel Taylor,Finance,81000,2.0,2016-01-16,"Creative problem-solver, valued by the team."
+832,beta,Stephen Lopez,Sales,75000,2.9,2018-12-19,Meets expectations; opportunities for growth in Q3.
+833,gamma,Nancy Mitchell,Finance,115000,3.7,2017-02-17,Proactive in taking ownership of projects.
+834,acme,Donald Taylor,Marketing,85000,1.8,2017-04-10,Shows initiative in cross-team projects.
+835,beta,Helen Thompson,Marketing,125000,1.6,2016-03-12,Excellent teamwork and communication skills.
+836,gamma,Raymond Young,Engineering,179000,3.5,2023-07-28,Shows initiative in cross-team projects.
+837,acme,Kathleen White,Finance,86000,3.5,2020-07-09,Strong candidate for senior role in next cycle.
+838,beta,Gary Lopez,Finance,116000,4.9,2020-09-24,Technical skills above average; working on soft skills.
+839,gamma,Pamela Rodriguez,HR,75000,1.2,2023-12-18,"Creative problem-solver, valued by the team."
+840,acme,Robert Allen,HR,95000,2.4,2024-08-25,"Quick learner, adapting well to new systems."
+841,beta,Jessica Hall,Marketing,100000,3.1,2018-07-16,Collaborative team player with positive attitude.
+842,gamma,Gregory Wilson,Engineering,92000,2.5,2016-02-17,"Reliable employee, handles pressure well."
+843,acme,Nancy Scott,Sales,99000,2.1,2018-01-08,Proactive in taking ownership of projects.
+844,beta,George Lopez,Finance,125000,3.0,2017-05-12,"Creative problem-solver, valued by the team."
+845,gamma,Stephanie Moore,Sales,113000,2.8,2021-05-29,High performer with leadership potential.
+846,acme,Richard Campbell,Finance,110000,2.1,2017-08-23,Needs improvement in time management.
+847,beta,Betty Martinez,HR,85000,4.2,2023-04-14,High performer with leadership potential.
+848,gamma,Daniel Clark,HR,61000,3.0,2024-07-11,"Quick learner, adapting well to new systems."
+849,acme,Patrick Lee,Finance,150000,4.1,2018-05-13,Technical skills above average; working on soft skills.
+850,beta,Ronald Miller,Finance,86000,3.8,2015-09-03,Meets expectations; opportunities for growth in Q3.
+851,gamma,Benjamin Miller,Sales,127000,2.8,2018-10-02,Technical skills above average; working on soft skills.
+852,acme,Brenda Scott,Sales,112000,4.7,2017-11-21,"Reliable employee, handles pressure well."
+853,beta,Jessica Thompson,Engineering,144000,4.5,2021-10-16,Meets expectations; opportunities for growth in Q3.
+854,gamma,Andrew Thompson,Finance,103000,2.3,2020-09-21,Proactive in taking ownership of projects.
+855,acme,Timothy Flores,HR,65000,2.1,2022-01-31,High performer with leadership potential.
+856,beta,Carol Clark,Marketing,112000,3.5,2021-05-30,"Creative problem-solver, valued by the team."
+857,gamma,Christopher Perez,Engineering,100000,1.9,2018-07-21,"Quick learner, adapting well to new systems."
+858,acme,Nicole Adams,Sales,100000,2.6,2024-12-14,Proactive in taking ownership of projects.
+859,beta,Laura Clark,Sales,133000,1.7,2024-07-30,"Strong contributor, consistently meets deadlines."
+860,gamma,Donald Nelson,Marketing,118000,2.0,2023-05-05,Collaborative team player with positive attitude.
+861,acme,Lisa Sanchez,Engineering,118000,1.4,2015-09-19,Strong candidate for senior role in next cycle.
+862,beta,Michael Johnson,HR,96000,4.1,2020-11-16,Consistently delivers quality work on schedule.
+863,gamma,Dorothy Flores,Engineering,104000,1.6,2022-05-06,Strong candidate for senior role in next cycle.
+864,acme,Sandra Thomas,HR,80000,4.0,2019-12-21,"Quick learner, adapting well to new systems."
+865,beta,Shirley Hernandez,Marketing,79000,1.1,2022-06-10,"Reliable employee, handles pressure well."
+866,gamma,Cynthia Wright,Sales,127000,4.7,2021-02-24,Proactive in taking ownership of projects.
+867,acme,Anna Lopez,Marketing,116000,3.4,2020-02-14,"Quick learner, adapting well to new systems."
+868,beta,Shirley Green,Finance,137000,3.6,2018-06-22,Strong candidate for senior role in next cycle.
+869,gamma,Anna Anderson,Sales,128000,4.2,2019-12-15,Technical skills above average; working on soft skills.
+870,acme,Dorothy Martinez,Sales,119000,2.2,2015-01-01,Needs improvement in time management.
+871,beta,Andrew Walker,Marketing,93000,3.1,2022-09-18,Strong candidate for senior role in next cycle.
+872,gamma,Kathleen Martin,HR,110000,1.0,2019-10-30,Consistently delivers quality work on schedule.
+873,acme,James Scott,Sales,95000,2.5,2019-08-14,Strong candidate for senior role in next cycle.
+874,beta,Ronald Thomas,Finance,137000,1.7,2023-04-08,"Quick learner, adapting well to new systems."
+875,gamma,Mark Taylor,HR,85000,1.3,2022-01-05,Meets expectations; opportunities for growth in Q3.
+876,acme,Andrew Adams,Finance,116000,4.0,2024-01-26,Technical skills above average; working on soft skills.
+877,beta,William Lopez,HR,72000,1.5,2016-03-28,"Quick learner, adapting well to new systems."
+878,gamma,Laura Moore,HR,100000,3.8,2020-07-08,Meets expectations; opportunities for growth in Q3.
+879,acme,Karen Brown,Sales,68000,4.9,2015-04-01,High performer with leadership potential.
+880,beta,Paul Rodriguez,Engineering,127000,3.9,2023-02-26,"Strong contributor, consistently meets deadlines."
+881,gamma,Karen Smith,Marketing,76000,3.0,2018-11-01,"Creative problem-solver, valued by the team."
+882,acme,Melissa Robinson,Sales,130000,3.8,2015-05-10,"Reliable employee, handles pressure well."
+883,beta,Linda Moore,Engineering,109000,4.1,2015-10-20,Needs improvement in time management.
+884,gamma,Matthew Taylor,HR,72000,4.3,2024-04-15,"Strong contributor, consistently meets deadlines."
+885,acme,Deborah Roberts,Engineering,123000,4.9,2017-10-09,Collaborative team player with positive attitude.
+886,beta,Ryan Mitchell,Engineering,116000,4.1,2020-11-04,"Quick learner, adapting well to new systems."
+887,gamma,Deborah Baker,Marketing,101000,4.8,2018-08-16,High performer with leadership potential.
+888,acme,Eric Davis,Engineering,162000,2.0,2022-02-28,Technical skills above average; working on soft skills.
+889,beta,Michael Nelson,Marketing,94000,1.9,2016-04-07,Meets expectations; opportunities for growth in Q3.
+890,gamma,Mary Hernandez,HR,81000,4.2,2021-07-22,Excellent teamwork and communication skills.
+891,acme,Mary Williams,HR,76000,3.3,2022-09-30,Proactive in taking ownership of projects.
+892,beta,Melissa Roberts,Finance,100000,1.4,2016-10-07,Proactive in taking ownership of projects.
+893,gamma,Helen Perez,Engineering,180000,4.7,2023-07-09,"Quick learner, adapting well to new systems."
+894,acme,Amanda Adams,Engineering,98000,1.6,2021-01-05,Consistently delivers quality work on schedule.
+895,beta,Gary Anderson,Engineering,106000,2.3,2021-04-06,Consistently delivers quality work on schedule.
+896,gamma,Janet Gonzalez,Sales,123000,1.1,2019-03-28,"Reliable employee, handles pressure well."
+897,acme,Jennifer Young,Marketing,86000,3.8,2021-04-08,Technical skills above average; working on soft skills.
+898,beta,Matthew Torres,Finance,144000,1.7,2018-11-25,"Reliable employee, handles pressure well."
+899,gamma,Scott Scott,HR,78000,1.6,2020-12-15,High performer with leadership potential.
+900,acme,Dorothy Wright,HR,79000,2.5,2015-01-03,Consistently delivers quality work on schedule.
+901,beta,Janet Lopez,Finance,130000,4.5,2021-12-13,Shows initiative in cross-team projects.
+902,gamma,Michelle Campbell,Sales,96000,1.3,2021-01-16,Shows initiative in cross-team projects.
+903,acme,Shirley Baker,HR,72000,3.0,2021-03-08,High performer with leadership potential.
+904,beta,Michelle Clark,Finance,117000,3.6,2016-03-28,Excellent teamwork and communication skills.
+905,gamma,Jennifer Rodriguez,Finance,89000,1.7,2015-05-09,Meets expectations; opportunities for growth in Q3.
+906,acme,Matthew Miller,Engineering,154000,1.1,2022-03-13,Shows initiative in cross-team projects.
+907,beta,Gary King,HR,103000,3.5,2021-08-14,Technical skills above average; working on soft skills.
+908,gamma,Mark Hill,Engineering,138000,3.9,2015-02-23,Strong candidate for senior role in next cycle.
+909,acme,Gary Garcia,Marketing,113000,2.9,2022-03-02,"Strong contributor, consistently meets deadlines."
+910,beta,Rebecca White,Sales,138000,4.2,2015-08-27,Shows initiative in cross-team projects.
+911,gamma,Shirley Williams,Finance,115000,3.9,2024-05-10,Technical skills above average; working on soft skills.
+912,acme,Eric Miller,Engineering,118000,1.4,2017-08-04,Needs improvement in time management.
+913,beta,Matthew King,HR,72000,3.6,2021-05-23,"Quick learner, adapting well to new systems."
+914,gamma,Brenda Clark,Marketing,107000,4.0,2023-08-05,"Quick learner, adapting well to new systems."
+915,acme,Gregory Robinson,Finance,127000,3.8,2019-10-16,Strong candidate for senior role in next cycle.
+916,beta,Nancy Scott,Engineering,112000,2.6,2018-10-14,"Quick learner, adapting well to new systems."
+917,gamma,Scott Lewis,Marketing,105000,4.7,2018-07-14,Needs improvement in time management.
+918,acme,Edward Carter,Sales,114000,3.5,2024-04-06,Collaborative team player with positive attitude.
+919,beta,Larry Wright,Sales,97000,1.9,2023-08-03,Needs improvement in time management.
+920,gamma,Laura Lewis,Sales,112000,4.8,2015-01-01,Collaborative team player with positive attitude.
+921,acme,Scott Johnson,Engineering,127000,3.1,2024-12-25,Technical skills above average; working on soft skills.
+922,beta,Mark Wilson,Engineering,129000,4.4,2015-03-30,Consistently delivers quality work on schedule.
+923,gamma,Angela Scott,Sales,138000,3.3,2021-05-30,High performer with leadership potential.
+924,acme,Ryan Thompson,Engineering,95000,1.6,2017-12-21,"Reliable employee, handles pressure well."
+925,beta,Sandra Taylor,Finance,113000,4.2,2016-01-12,"Strong analytical mindset, great attention to detail."
+926,gamma,Margaret Campbell,HR,97000,1.3,2018-08-22,Consistently delivers quality work on schedule.
+927,acme,Gary Hall,HR,71000,3.8,2024-03-10,Strong candidate for senior role in next cycle.
+928,beta,Samuel Martin,Engineering,168000,1.1,2024-01-24,"Strong analytical mindset, great attention to detail."
+929,gamma,Linda Roberts,HR,65000,2.3,2024-11-12,Shows initiative in cross-team projects.
+930,acme,Jessica Roberts,HR,87000,1.9,2022-04-27,Shows initiative in cross-team projects.
+931,beta,Samantha Roberts,Finance,81000,3.5,2015-08-10,Technical skills above average; working on soft skills.
+932,gamma,Joshua Wright,Finance,85000,3.3,2018-08-31,Needs improvement in time management.
+933,acme,Michael Baker,Marketing,80000,3.9,2019-05-29,Proactive in taking ownership of projects.
+934,beta,Elizabeth Anderson,Finance,146000,2.7,2023-10-26,"Creative problem-solver, valued by the team."
+935,gamma,Carol Garcia,Marketing,79000,2.9,2023-05-11,"Strong contributor, consistently meets deadlines."
+936,acme,Dorothy Garcia,Finance,132000,2.6,2019-11-15,Consistently delivers quality work on schedule.
+937,beta,Sarah Walker,Marketing,120000,3.2,2020-06-21,"Creative problem-solver, valued by the team."
+938,gamma,Brenda Flores,Finance,106000,5.0,2020-11-17,Meets expectations; opportunities for growth in Q3.
+939,acme,Paul Roberts,Marketing,75000,2.7,2022-09-05,Strong candidate for senior role in next cycle.
+940,beta,Joseph Nelson,Finance,92000,2.7,2019-02-05,"Reliable employee, handles pressure well."
+941,gamma,Brian Hill,Marketing,91000,3.6,2023-08-19,Technical skills above average; working on soft skills.
+942,acme,Brandon Lewis,Marketing,93000,3.5,2019-12-10,"Strong contributor, consistently meets deadlines."
+943,beta,Debra White,Marketing,83000,1.6,2023-03-03,Shows initiative in cross-team projects.
+944,gamma,Michael Thomas,Engineering,105000,4.8,2016-08-27,Shows initiative in cross-team projects.
+945,acme,Carol Hall,Sales,67000,4.2,2018-06-03,Proactive in taking ownership of projects.
+946,beta,Kevin Wilson,HR,61000,4.0,2017-05-17,Meets expectations; opportunities for growth in Q3.
+947,gamma,Dorothy Scott,Finance,149000,2.9,2023-03-09,High performer with leadership potential.
+948,acme,Justin Nelson,Engineering,139000,3.1,2017-11-12,High performer with leadership potential.
+949,beta,Betty Hall,Engineering,127000,3.5,2015-08-06,Proactive in taking ownership of projects.
+950,gamma,Deborah Nelson,Engineering,99000,2.1,2024-07-22,Strong candidate for senior role in next cycle.
+951,acme,John Jackson,Sales,79000,4.5,2022-04-13,"Creative problem-solver, valued by the team."
+952,beta,Angela Rivera,Marketing,95000,1.4,2018-07-16,Proactive in taking ownership of projects.
+953,gamma,Elizabeth Lopez,Finance,150000,1.8,2020-02-19,Needs improvement in time management.
+954,acme,Ashley King,Engineering,95000,2.2,2020-06-29,"Creative problem-solver, valued by the team."
+955,beta,Brian Baker,Marketing,71000,2.4,2022-01-04,Technical skills above average; working on soft skills.
+956,gamma,Kimberly Brown,Marketing,103000,3.5,2024-11-08,"Creative problem-solver, valued by the team."
+957,acme,Kimberly Anderson,Engineering,163000,1.6,2019-05-29,"Quick learner, adapting well to new systems."
+958,beta,Janet Harris,Marketing,76000,3.1,2022-08-09,"Strong analytical mindset, great attention to detail."
+959,gamma,Donald Torres,Marketing,97000,1.6,2018-07-03,Strong candidate for senior role in next cycle.
+960,acme,Laura Wright,Finance,123000,1.5,2022-04-26,High performer with leadership potential.
+961,beta,Sarah Martin,Finance,107000,3.8,2020-11-15,Strong candidate for senior role in next cycle.
+962,gamma,Charles Adams,Marketing,98000,4.7,2016-10-09,"Reliable employee, handles pressure well."
+963,acme,Jonathan Campbell,Engineering,163000,1.5,2018-07-24,Shows initiative in cross-team projects.
+964,beta,Patricia Carter,Marketing,118000,2.3,2019-08-23,"Creative problem-solver, valued by the team."
+965,gamma,Samantha Mitchell,Sales,123000,2.1,2023-09-27,Meets expectations; opportunities for growth in Q3.
+966,acme,Nancy Johnson,Engineering,107000,4.0,2021-11-11,"Strong analytical mindset, great attention to detail."
+967,beta,Brandon Anderson,Sales,139000,3.4,2017-08-03,"Quick learner, adapting well to new systems."
+968,gamma,David Hall,Engineering,137000,4.1,2016-07-03,Needs improvement in time management.
+969,acme,Carolyn Adams,Finance,141000,2.5,2024-07-22,"Creative problem-solver, valued by the team."
+970,beta,Sarah Hernandez,HR,91000,1.8,2015-05-13,"Creative problem-solver, valued by the team."
+971,gamma,Edward Anderson,Engineering,125000,4.0,2017-04-10,Consistently delivers quality work on schedule.
+972,acme,Daniel Lewis,Marketing,74000,4.5,2020-06-29,Collaborative team player with positive attitude.
+973,beta,Ashley Ramirez,Sales,125000,2.6,2015-06-21,"Strong analytical mindset, great attention to detail."
+974,gamma,Joshua Sanchez,HR,107000,3.4,2023-04-30,"Strong analytical mindset, great attention to detail."
+975,acme,Samuel Rivera,Finance,149000,4.1,2020-11-02,Excellent teamwork and communication skills.
+976,beta,Jennifer Thomas,HR,90000,3.1,2019-06-09,Collaborative team player with positive attitude.
+977,gamma,Deborah King,Engineering,163000,4.1,2015-07-21,Meets expectations; opportunities for growth in Q3.
+978,acme,Ronald Martin,Sales,123000,4.1,2018-03-17,Proactive in taking ownership of projects.
+979,beta,Emily Flores,Marketing,98000,4.7,2022-09-27,Needs improvement in time management.
+980,gamma,Samuel Lewis,Marketing,100000,1.4,2020-08-12,Excellent teamwork and communication skills.
+981,acme,Justin Hall,Marketing,121000,3.2,2019-05-30,"Creative problem-solver, valued by the team."
+982,beta,Patricia Lopez,Sales,124000,2.8,2022-12-28,Strong candidate for senior role in next cycle.
+983,gamma,Ryan Garcia,Marketing,128000,2.0,2022-10-04,"Quick learner, adapting well to new systems."
+984,acme,Janet Davis,Marketing,117000,1.4,2022-12-02,Proactive in taking ownership of projects.
+985,beta,Shirley Rivera,Sales,76000,2.5,2023-11-15,Needs improvement in time management.
+986,gamma,Timothy Scott,Finance,101000,2.5,2023-08-13,High performer with leadership potential.
+987,acme,Raymond Martinez,Sales,139000,1.6,2016-08-15,High performer with leadership potential.
+988,beta,Donna Martin,Engineering,145000,3.9,2020-01-02,Technical skills above average; working on soft skills.
+989,gamma,Thomas Gonzalez,Marketing,78000,1.0,2023-08-02,Technical skills above average; working on soft skills.
+990,acme,Amy Young,Engineering,150000,3.2,2015-01-24,"Strong analytical mindset, great attention to detail."
+991,beta,Margaret Nguyen,HR,76000,3.6,2020-02-02,"Creative problem-solver, valued by the team."
+992,gamma,Scott Hill,HR,65000,1.0,2024-11-22,Needs improvement in time management.
+993,acme,Anthony Brown,Sales,138000,1.7,2015-08-14,"Quick learner, adapting well to new systems."
+994,beta,Charles Williams,Sales,70000,3.7,2024-05-25,"Strong analytical mindset, great attention to detail."
+995,gamma,Elizabeth Brown,Sales,108000,1.4,2016-12-31,High performer with leadership potential.
+996,acme,Daniel Robinson,Sales,139000,4.0,2019-01-15,Strong candidate for senior role in next cycle.
+997,beta,Kenneth Lee,Engineering,102000,2.5,2019-04-02,Shows initiative in cross-team projects.
+998,gamma,Stephen Jones,Engineering,146000,2.2,2016-07-05,Excellent teamwork and communication skills.
+999,acme,Shirley Clark,Sales,108000,3.1,2022-10-21,Meets expectations; opportunities for growth in Q3.
+1000,beta,Susan Torres,Finance,88000,3.9,2022-01-20,Needs improvement in time management.

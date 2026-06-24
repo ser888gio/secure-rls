@@ -7,7 +7,7 @@ These tests prove that:
 3. Tool schemas exposed to the LLM contain no tenant_id parameter.
 """
 import pytest
-from db import SecureDataAccess
+from src.data.db import SecureDataAccess
 
 
 TENANTS = ["acme", "beta", "gamma"]
@@ -109,8 +109,8 @@ class TestAdversarialInputs:
 
 class TestToolSchemas:
     def test_no_tenant_id_in_any_tool_schema(self):
-        from agent import _make_tools
-        from db import SecureDataAccess
+        from src.agent.agent import _make_tools
+        from src.data.db import SecureDataAccess
 
         sda = SecureDataAccess("acme")
         tools = _make_tools(sda)
@@ -123,8 +123,8 @@ class TestToolSchemas:
             )
 
     def test_tool_names_present(self):
-        from agent import _make_tools
-        from db import SecureDataAccess
+        from src.agent.agent import _make_tools
+        from src.data.db import SecureDataAccess
 
         sda = SecureDataAccess("acme")
         tools = _make_tools(sda)

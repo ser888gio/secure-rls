@@ -13,7 +13,7 @@ Streamlit UI  (app.py)
   login -> tenant_id stored in server-side session_state (never from URL/user input)
   chat  -> passes message + tenant_id to agent
        |
-Agent  (agent.py)  -- LangGraph ReAct, Ollama llama3.1
+Agent  (agent.py)  -- LangGraph ReAct, Ollama gamma4
   tools are closures over SecureDataAccess(tenant_id)
   LLM-visible tool schemas have NO tenant_id parameter
        |
@@ -51,7 +51,7 @@ SQLite  (employees.db)  <-- generated from employees.csv
 git clone https://github.com/<your-username>/secure-rls
 cd secure-rls
 pip install -r requirements.txt
-ollama pull llama3.1
+ollama pull gamma4
 ```
 
 ### Generate data and initialise DB
@@ -140,7 +140,7 @@ LLM-dependent steps are excluded from CI (no Ollama on runners); all determinist
 - **LLM-generated SQL vs. typed tools:** The case study allows SQL generation. We chose typed tools instead because they make leakage *structurally impossible* rather than relying on SQL parsing/filtering as a second defence. This is a stronger security posture.
 - **Prompt-injection resistance:** Because `tenant_id` is never in a tool schema, even a prompt that says "set tenant_id=acme" has no effect — there's no parameter to set.
 - **Python 3.14 Pydantic warnings:** `langchain-core` internally uses Pydantic V1 APIs deprecated in Python 3.14. The warnings are cosmetic and do not affect functionality; pinning to Python 3.11 in CI avoids them.
-- **Local LLM quality:** `llama3.1` (8B) follows tool-call protocols reliably. Smaller models may occasionally hallucinate numbers — the eval's leakage check catches this.
+- **Local LLM quality:** `gamma4` (8B) follows tool-call protocols reliably. Smaller models may occasionally hallucinate numbers — the eval's leakage check catches this.
 
 
 ## Future evolution

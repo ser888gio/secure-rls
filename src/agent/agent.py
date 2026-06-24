@@ -17,7 +17,7 @@ from langchain_core.tools import tool
 from langchain_ollama import ChatOllama
 from langgraph.prebuilt import create_react_agent
 
-from db import SecureDataAccess
+from src.data.db import SecureDataAccess
 
 OLLAMA_MODEL = "gemma4"
 

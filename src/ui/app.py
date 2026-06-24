@@ -1,12 +1,18 @@
 """Streamlit UI — secure multi-tenant data analyst chat."""
+import sys
+from pathlib import Path
+
+# Ensure project root is on sys.path when launched via `streamlit run src/ui/app.py`
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
+
 import json
 
 import plotly.graph_objects as go
 import streamlit as st
 
-import audit
-from agent import build_agent, run_agent
-from db import DB_PATH, CSV_PATH, init_db
+from src.security import audit
+from src.agent.agent import build_agent, run_agent
+from src.data.db import DB_PATH, CSV_PATH, init_db
 
 # ---------------------------------------------------------------------------
 # Bootstrap DB on first run
@@ -15,7 +21,7 @@ if not DB_PATH.exists():
     if CSV_PATH.exists():
         init_db()
     else:
-        st.error("employees.csv not found. Run `python gen_data.py` first.")
+        st.error("employees.csv not found. Run `python src/data/gen_data.py` first.")
         st.stop()
 
 # ---------------------------------------------------------------------------

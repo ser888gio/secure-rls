@@ -10,7 +10,7 @@ forgets a WHERE clause cannot leak across tenants.
 """
 import sqlite3
 import pytest
-from db import SecureDataAccess, tenant_view
+from src.data.db import SecureDataAccess, tenant_view
 
 
 def _raw_conn(tenant_id: str):

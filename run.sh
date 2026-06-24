@@ -12,15 +12,15 @@ if ! python -c "import streamlit" 2>/dev/null; then
 fi
 
 # 2. Generate dataset if missing
-if [ ! -f "employees.csv" ]; then
+if [ ! -f "data/employees.csv" ]; then
   echo "Generating dataset..."
-  python gen_data.py
+  python src/data/gen_data.py
 fi
 
 # 3. Initialise DB if missing
-if [ ! -f "employees.db" ]; then
+if [ ! -f "data/employees.db" ]; then
   echo "Initialising database..."
-  python -c "from db import init_db; init_db()"
+  python -c "from src.data.db import init_db; init_db()"
 fi
 
 # 4. Check Ollama is reachable
@@ -32,4 +32,4 @@ fi
 echo "Starting app at http://localhost:8501"
 echo "Credentials: acme_admin/acme123  beta_admin/beta123  gamma_admin/gamma123"
 echo ""
-python -m streamlit run app.py
+python -m streamlit run src/ui/app.py

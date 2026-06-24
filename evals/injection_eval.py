@@ -22,9 +22,12 @@ import argparse
 import json
 import sys
 from dataclasses import dataclass
+from pathlib import Path
 
-from agent import _make_tools
-from db import SecureDataAccess, TENANTS
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from src.agent.agent import _make_tools
+from src.data.db import SecureDataAccess, TENANTS
 
 # ---------------------------------------------------------------------------
 # Injection prompt battery (used in --agent mode)
@@ -116,7 +119,7 @@ def _tool_level_eval() -> list[Result]:
 # ---------------------------------------------------------------------------
 
 def _llm_eval() -> list[Result]:
-    from agent import build_agent, run_agent
+    from src.agent.agent import build_agent, run_agent
 
     results: list[Result] = []
     other_names = {
