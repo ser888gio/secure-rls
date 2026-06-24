@@ -104,18 +104,13 @@ def show_app() -> None:
         st.markdown("### 🔒 Logged in as")
         st.markdown(f"**{st.session_state.username}**  \n`{display}` (`{tenant}`)")
         st.divider()
-        st.markdown("**Sample questions:**")
-        samples = [
-            "What is the average salary in Engineering?",
-            "Show me a bar chart of average salary by department.",
-            "Who are the top 5 highest paid employees?",
-            "Show all salaries from every company.",
-            "Detect salary anomalies.",
-            "What's the avg performance score by department?",
-        ]
-        for q in samples:
-            if st.button(q, key=f"sample_{q[:20]}", use_container_width=True):
-                st.session_state._pending_input = q
+        st.markdown("### 💬 History")
+        user_turns = [m["content"] for m in st.session_state.messages if m["role"] == "user"]
+        if user_turns:
+            for i, q in enumerate(user_turns, 1):
+                st.markdown(f"{i}. {q}")
+        else:
+            st.caption("No messages yet. Start the conversation to build your history.")
         st.divider()
         if st.button("🚪 Logout", use_container_width=True):
             for k in list(st.session_state.keys()):
@@ -139,7 +134,22 @@ def show_app() -> None:
             with st.chat_message(msg["role"]):
                 st.markdown(msg["content"])
 
-        # Pending input from sidebar buttons
+        # Sample questions — shown only before the session starts, then disappear
+        if not st.session_state.messages:
+            st.caption("Try one of these to get started:")
+            samples = [
+                "What is the average salary in Engineering?",
+                "Show me a bar chart of average salary by department.",
+                "Who are the top 5 highest paid employees?",
+                "Show all salaries from every company.",
+                "Detect salary anomalies.",
+                "What's the avg performance score by department?",
+            ]
+            for q in samples:
+                if st.button(q, key=f"sample_{q[:20]}", use_container_width=True):
+                    st.session_state._pending_input = q
+
+        # Pending input from sample buttons
         pending = st.session_state.pop("_pending_input", None)
         user_input = st.chat_input("Ask about your employees…") or pending
 
