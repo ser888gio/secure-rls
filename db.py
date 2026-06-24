@@ -18,6 +18,8 @@ ALLOWED_COLUMNS = frozenset(
     ["user_id", "tenant_id", "name", "department", "salary",
      "performance_score", "hire_date", "notes"]
 )
+# Columns callers (and the LLM) may request — tenant_id is never exposed
+QUERYABLE_COLUMNS = ALLOWED_COLUMNS - {"tenant_id"}
 ALLOWED_DEPARTMENTS = frozenset(
     ["Engineering", "Marketing", "Sales", "HR", "Finance"]
 )
@@ -76,7 +78,7 @@ class SecureDataAccess:
 
     @staticmethod
     def _validate_column(col: str) -> str:
-        if col not in ALLOWED_COLUMNS:
+        if col not in QUERYABLE_COLUMNS:
             raise ValueError(f"Column {col!r} is not queryable.")
         return col
 
@@ -117,7 +119,7 @@ class SecureDataAccess:
                 self._validate_column(col)
             select = ", ".join(columns)
         else:
-            select = ", ".join(ALLOWED_COLUMNS - {"tenant_id"})
+            select = ", ".join(QUERYABLE_COLUMNS)
 
         limit = min(max(1, limit), 200)
 
